@@ -1,0 +1,17 @@
+INFO  2022-11-18 16:51:36,872 minitest.py _miniSetUp      279 =========Current case: test_01_home_page_path=========
+INFO  2022-11-18 16:51:36,873 minitest.py _miniSetUp      280 package info: D:.E护通.自动化.miniapp_auto.case.homepage_test, case info: HomePageTest.test_01_home_page_path
+INFO  2022-11-18 16:51:36,874 basenative.py wrapper         23  call BaseNative.back_to_miniprogram
+INFO  2022-11-18 16:51:36,874 basenative.py back_to_miniprogram 528 try back_to_miniprogram 3
+INFO  2022-11-18 16:51:36,875 basenative.py wrapper         27  call BaseNative.back_to_miniprogram end
+INFO  2022-11-18 16:51:36,875 app.py     relaunch        387 ReLaunch: /pages/user/userindex
+DEBUG 2022-11-18 16:51:36,876 connection.py send_async      211 ASYNC_SEND > {"id": "d306dc9a-e968-4688-821b-a088aeb53328", "method": "App.callWxMethod", "params": {"method": "reLaunch", "args": [{"url": "/pages/user/userindex"}]}}
+DEBUG 2022-11-18 16:51:36,961 connection.py _on_message     252 RECV < {"id":"d306dc9a-e968-4688-821b-a088aeb53328","result":{"result":{"errMsg":"reLaunch:ok"}}}
+INFO  2022-11-18 16:51:36,963 connection.py _on_message     273 received async msg: d306dc9a-e968-4688-821b-a088aeb53328
+DEBUG 2022-11-18 16:51:37,412 connection.py _on_message     252 RECV < {"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"webviewId":4,"path":"pages/user/userindex","query":{},"openType":"reLaunch","__ts__":1668761497410},1668761497411]}}
+INFO  2022-11-18 16:51:37,417 app.py     _on_route_changed 588 Route changed, {'name': 'onAppRouteDone', 'args': [{'webviewId': 4, 'path': 'pages/user/userindex', 'query': {}, 'openType': 'reLaunch', '__ts__': 1668761497410}, 1668761497411]}
+INFO  2022-11-18 16:51:37,421 minitest.py capture         575 capture setup.png
+INFO  2022-11-18 16:51:37,422 basenative.py wrapper         23  call IdeNative.screen_shot
+DEBUG 2022-11-18 16:51:37,423 connection.py send            201 SEND > {"id":"ca619d10-11b3-4993-ad5d-49d8a1a6d485","method":"App.captureScreenshot","params":{}}
+INFO  2022-11-18 16:52:37,649 minitest.py capture         575 capture setup.png
+INFO  2022-11-18 16:52:37,650 basenative.py wrapper         23  call IdeNative.screen_shot
+DEBUG 2022-11-18 16:52:37,651 connection.py send            201 SEND > {"id":"b0cdf7dc-8424-4a95-83ae-07e42732d70d","method":"App.captureScreenshot","params":{}}

@@ -1,0 +1,27 @@
+INFO  2022-11-24 15:18:21,419 minitest.py _miniSetUp      279 =========Current case: test_04_check_nurse_order_success=========
+INFO  2022-11-24 15:18:21,420 minitest.py _miniSetUp      280 package info: D:.E护通.自动化.miniapp_auto.test.nurseorder_test, case info: NurseOrderTest.test_04_check_nurse_order_success
+INFO  2022-11-24 15:18:21,421 basenative.py wrapper         23  call BaseNative.back_to_miniprogram
+INFO  2022-11-24 15:18:21,422 basenative.py back_to_miniprogram 528 try back_to_miniprogram 3
+INFO  2022-11-24 15:18:21,423 basenative.py wrapper         27  call BaseNative.back_to_miniprogram end
+INFO  2022-11-24 15:18:21,435 app.py     relaunch        387 ReLaunch: /pages/user/userindex
+DEBUG 2022-11-24 15:18:21,447 connection.py send_async      211 ASYNC_SEND > {"id": "d396abef-f843-4092-a267-fa9e630a0b7b", "method": "App.callWxMethod", "params": {"method": "reLaunch", "args": [{"url": "/pages/user/userindex"}]}}
+DEBUG 2022-11-24 15:18:21,614 connection.py _on_message     252 RECV < {"id":"d396abef-f843-4092-a267-fa9e630a0b7b","result":{"result":{"errMsg":"reLaunch:ok"}}}
+INFO  2022-11-24 15:18:21,615 connection.py _on_message     273 received async msg: d396abef-f843-4092-a267-fa9e630a0b7b
+DEBUG 2022-11-24 15:18:22,599 connection.py _on_message     252 RECV < {"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"webviewId":4,"path":"pages/user/userindex","query":{},"openType":"reLaunch","__ts__":1669274302596},1669274302598]}}
+INFO  2022-11-24 15:18:22,602 app.py     _on_route_changed 588 Route changed, {'name': 'onAppRouteDone', 'args': [{'webviewId': 4, 'path': 'pages/user/userindex', 'query': {}, 'openType': 'reLaunch', '__ts__': 1669274302596}, 1669274302598]}
+DEBUG 2022-11-24 15:18:22,604 minitest.py _miniTearDown   513 =========Current case Down: test_04_check_nurse_order_success=========
+INFO  2022-11-24 15:18:22,605 basenative.py wrapper         23  call BaseNative.get_start_up
+INFO  2022-11-24 15:18:22,606 basenative.py wrapper         27  call BaseNative.get_start_up end
+ERROR 2022-11-24 15:18:22,640 assertbase.py _teardown_collect 273 <bound method NurseOrderTest.test_04_check_nurse_order_success of <test.nurseorder_test.NurseOrderTest testMethod=test_04_check_nurse_order_success>>
+Traceback (most recent call last):
+  File "c:\users\admin\appdata\local\programs\python\python38\lib\site-packages\minium\framework\libs\unittest\case.py", line 32, in testPartExecutor
+    yield
+  File "c:\users\admin\appdata\local\programs\python\python38\lib\site-packages\minium\framework\libs\unittest\case.py", line 118, in run
+    self._callTestMethod(testMethod)
+  File "c:\users\admin\appdata\local\programs\python\python38\lib\unittest\case.py", line 633, in _callTestMethod
+    method()
+  File "D:\E护通\自动化\miniapp_auto\test\nurseorder_test.py", line 25, in test_04_check_nurse_order_success
+    self.NurseOrderFlow.check_order_success('普通换药')
+  File "c:\users\admin\appdata\local\programs\python\python38\lib\site-packages\minium\framework\assertbase.py", line 340, in __getattribute__
+    attr = super().__getattribute__(item)
+AttributeError: 'NurseOrderTest' object has no attribute 'NurseOrderFlow'

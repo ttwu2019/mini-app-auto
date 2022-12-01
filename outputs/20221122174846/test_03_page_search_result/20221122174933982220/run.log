@@ -1,0 +1,33 @@
+INFO  2022-11-22 17:49:33,986 minitest.py _miniSetUp      279 =========Current case: test_03_page_search_result=========
+INFO  2022-11-22 17:49:33,987 minitest.py _miniSetUp      280 package info: D:.E护通.自动化.miniapp_auto.case.searchPage_test, case info: SearchPageTest.test_03_page_search_result
+INFO  2022-11-22 17:49:33,988 basenative.py wrapper         23  call BaseNative.back_to_miniprogram
+INFO  2022-11-22 17:49:33,989 basenative.py back_to_miniprogram 528 try back_to_miniprogram 3
+INFO  2022-11-22 17:49:33,990 basenative.py wrapper         27  call BaseNative.back_to_miniprogram end
+INFO  2022-11-22 17:49:33,991 app.py     relaunch        387 ReLaunch: /pages/user/userindex
+DEBUG 2022-11-22 17:49:33,994 connection.py send_async      211 ASYNC_SEND > {"id": "f61bbdb4-de0f-41a4-962a-d25785f0ff94", "method": "App.callWxMethod", "params": {"method": "reLaunch", "args": [{"url": "/pages/user/userindex"}]}}
+DEBUG 2022-11-22 17:49:34,045 connection.py _on_message     252 RECV < {"id":"f61bbdb4-de0f-41a4-962a-d25785f0ff94","result":{"result":{"errMsg":"reLaunch:ok"}}}
+INFO  2022-11-22 17:49:34,046 connection.py _on_message     273 received async msg: f61bbdb4-de0f-41a4-962a-d25785f0ff94
+DEBUG 2022-11-22 17:49:34,529 connection.py _on_message     252 RECV < {"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"webviewId":7,"path":"pages/user/userindex","query":{},"openType":"reLaunch","__ts__":1669110574526},1669110574528]}}
+INFO  2022-11-22 17:49:34,531 app.py     _on_route_changed 588 Route changed, {'name': 'onAppRouteDone', 'args': [{'webviewId': 7, 'path': 'pages/user/userindex', 'query': {}, 'openType': 'reLaunch', '__ts__': 1669110574526}, 1669110574528]}
+DEBUG 2022-11-22 17:49:34,533 connection.py send            201 SEND > {"id":"e55b4b62-4b0f-4f39-8f4c-1448178dfc63","method":"App.getCurrentPage","params":{}}
+DEBUG 2022-11-22 17:49:34,534 connection.py _on_message     252 RECV < {"id":"e55b4b62-4b0f-4f39-8f4c-1448178dfc63","result":{"pageId":7,"path":"pages/user/userindex","query":{}}}
+INFO  2022-11-22 17:49:34,535 page.py    _get_elements_by_css 527 try to get elements: view[class="uh-bottom data-v-ec48ec48"]
+DEBUG 2022-11-22 17:49:34,536 connection.py send            201 SEND > {"id":"cc30c758-b979-40cc-92a7-9bc540fe24a0","method":"Page.getElements","params":{"selector":"view[class=\"uh-bottom data-v-ec48ec48\"]","pageId":7}}
+DEBUG 2022-11-22 17:49:34,627 connection.py _on_message     252 RECV < {"id":"cc30c758-b979-40cc-92a7-9bc540fe24a0","result":{"elements":[{"elementId":"a4175d96-6dda-489c-9e9b-6630e662fb0d","tagName":"view"}]}}
+INFO  2022-11-22 17:49:34,628 page.py    _get_elements_by_css 534 find elements success: [<minium.miniprogram.base_driver.element.BaseElement object at 0x00000205E16389D0>]
+DEBUG 2022-11-22 17:49:34,630 minitest.py _miniTearDown   513 =========Current case Down: test_03_page_search_result=========
+INFO  2022-11-22 17:49:34,631 basenative.py wrapper         23  call BaseNative.get_start_up
+INFO  2022-11-22 17:49:34,631 basenative.py wrapper         27  call BaseNative.get_start_up end
+ERROR 2022-11-22 17:49:34,636 assertbase.py _teardown_collect 273 <bound method SearchPageTest.test_03_page_search_result of <case.searchPage_test.SearchPageTest testMethod=test_03_page_search_result>>
+Traceback (most recent call last):
+  File "c:\users\admin\appdata\local\programs\python\python38\lib\site-packages\minium\framework\libs\unittest\case.py", line 32, in testPartExecutor
+    yield
+  File "c:\users\admin\appdata\local\programs\python\python38\lib\site-packages\minium\framework\libs\unittest\case.py", line 118, in run
+    self._callTestMethod(testMethod)
+  File "c:\users\admin\appdata\local\programs\python\python38\lib\unittest\case.py", line 633, in _callTestMethod
+    method()
+  File "D:\E护通\自动化\miniapp_auto\case\searchPage_test.py", line 23, in test_03_page_search_result
+    self.searchPage.check_search_results('院外居家服务')
+  File "D:\E护通\自动化\miniapp_auto\case\pages\searchpage.py", line 26, in check_search_results
+    BaseSelector.waitToClick(search)
+TypeError: waitToClick() missing 1 required positional argument: 'selector'

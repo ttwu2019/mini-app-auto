@@ -1,0 +1,39 @@
+INFO  2022-11-25 14:25:28,154 minitest.py _miniSetUp      279 =========Current case: test_04_check_nurse_order_success=========
+INFO  2022-11-25 14:25:28,155 minitest.py _miniSetUp      280 package info: D:.E护通.自动化.miniapp_auto.test.nurseorder_test, case info: NurseOrderTest.test_04_check_nurse_order_success
+INFO  2022-11-25 14:25:28,155 basenative.py wrapper         23  call BaseNative.back_to_miniprogram
+INFO  2022-11-25 14:25:28,156 basenative.py back_to_miniprogram 528 try back_to_miniprogram 3
+INFO  2022-11-25 14:25:28,156 basenative.py wrapper         27  call BaseNative.back_to_miniprogram end
+INFO  2022-11-25 14:25:28,157 app.py     relaunch        387 ReLaunch: /pages/user/userindex
+DEBUG 2022-11-25 14:25:28,158 connection.py send_async      211 ASYNC_SEND > {"id": "76307abd-3905-49ae-b0f3-caddd04db50e", "method": "App.callWxMethod", "params": {"method": "reLaunch", "args": [{"url": "/pages/user/userindex"}]}}
+DEBUG 2022-11-25 14:25:28,203 connection.py _on_message     252 RECV < {"id":"76307abd-3905-49ae-b0f3-caddd04db50e","result":{"result":{"errMsg":"reLaunch:ok"}}}
+INFO  2022-11-25 14:25:28,204 connection.py _on_message     273 received async msg: 76307abd-3905-49ae-b0f3-caddd04db50e
+DEBUG 2022-11-25 14:25:28,451 connection.py _on_message     252 RECV < {"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"webviewId":4,"path":"pages/user/userindex","query":{},"openType":"reLaunch","__ts__":1669357528449},1669357528450]}}
+INFO  2022-11-25 14:25:28,453 app.py     _on_route_changed 588 Route changed, {'name': 'onAppRouteDone', 'args': [{'webviewId': 4, 'path': 'pages/user/userindex', 'query': {}, 'openType': 'reLaunch', '__ts__': 1669357528449}, 1669357528450]}
+INFO  2022-11-25 14:25:28,455 minitest.py capture         575 capture setup.png
+INFO  2022-11-25 14:25:28,456 basenative.py wrapper         23  call IdeNative.screen_shot
+DEBUG 2022-11-25 14:25:28,456 connection.py send            201 SEND > {"id":"7d9ecf66-56e7-42a1-aaad-f7cc7483695c","method":"App.captureScreenshot","params":{}}
+DEBUG 2022-11-25 14:25:28,651 connection.py _on_message     250 RECV < {"id":"7d9ecf66-56e7-42a1-aaad-f7cc7483695c","result":{"data":"iVBORw0KGgoAAAANSUhEUgAAAYYAAAL6CAIAAAC96maVAAAAAXNSR0IArs4c6QAAC8NJREFUeJzt3duOI1cZgNHtQx8ZyCSTSEjcwB3v/0JwhyLooE7a7bOLi0FEQh0ykTL2R/daL+D/wvq8y7Wr9myapgHQML/0AAA/kiQgRJKAEEkCQiQJCJEkIESSgBBJAkIkCQiRJCBEkoAQSQJCJAkIkSQgRJKAEEkCQiQJCJEkIESSgBBJAkIkCQiRJCBEkoAQSQJCJAkIkSQgRJKAEEkCQiQJCJEkIESSgBBJAkIkCQiRJCBEkoAQSQJCJAkIkSQgRJKAEEkCQiQJCJEkIESSgBBJAkIkCQiRJCBEkoAQSQJCJAkIkSQgRJKAEEkCQiQJCJEkIESSgBBJAkIkCQiRJCBEkoAQSQJCJAkIkSQgRJKAEEkCQiQJCJEkIE...
+INFO  2022-11-25 14:25:28,655 basenative.py wrapper         27  call IdeNative.screen_shot end
+DEBUG 2022-11-25 14:25:28,663 minitest.py _miniTearDown   513 =========Current case Down: test_04_check_nurse_order_success=========
+INFO  2022-11-25 14:25:28,665 basenative.py wrapper         23  call BaseNative.get_start_up
+INFO  2022-11-25 14:25:28,666 basenative.py wrapper         27  call BaseNative.get_start_up end
+INFO  2022-11-25 14:25:28,671 minitest.py capture         575 capture teardown.png
+INFO  2022-11-25 14:25:28,672 basenative.py wrapper         23  call IdeNative.screen_shot
+DEBUG 2022-11-25 14:25:28,672 connection.py send            201 SEND > {"id":"d2d483e0-2516-43b6-aec8-1af395384520","method":"App.captureScreenshot","params":{}}
+DEBUG 2022-11-25 14:25:28,844 connection.py _on_message     250 RECV < {"id":"d2d483e0-2516-43b6-aec8-1af395384520","result":{"data":"iVBORw0KGgoAAAANSUhEUgAAAYYAAAL6CAIAAAC96maVAAAAAXNSR0IArs4c6QAAIABJREFUeJzsvf1vG0e6Lvh2N78/RIn6ouREjmPaM4l8TqycPWMNJglw7s44xr07tn84yN0LzAF29+5/dgfY3VksYHsWi8Tn7C6QZDDyzN2xc48V33HoOGZsifoiRYrfze7aH5rdXVVd1Wq2RJuJ3ydApZqsqrfqraqn33q6KSuJf7wKAACgABACiiJJAYhVBogCCpv3pIRI27Ebstq0YNVyLUjT43CCqtLK7OC9bdLNe/IS/wARN+njf/Fc0D6U+NOnodFw7Oywjj7RXMjMcv0P3WiAcZ1o3oPMKVEUxU0Fa0O+TsLM+xhdZc/FMYX823ZKqLQ5sCfayTtLl2pVoewojhfsHQgARFGAACgKAAw5aJiCbZbiIwBQhldOSo...
+INFO  2022-11-25 14:25:28,848 basenative.py wrapper         27  call IdeNative.screen_shot end
+ERROR 2022-11-25 14:25:28,856 assertbase.py _teardown_collect 273 <bound method NurseOrderTest.test_04_check_nurse_order_success of <test.nurseorder_test.NurseOrderTest testMethod=test_04_check_nurse_order_success>>
+Traceback (most recent call last):
+  File "c:\users\admin\appdata\local\programs\python\python38\lib\site-packages\minium\framework\libs\unittest\case.py", line 32, in testPartExecutor
+    yield
+  File "c:\users\admin\appdata\local\programs\python\python38\lib\site-packages\minium\framework\libs\unittest\case.py", line 118, in run
+    self._callTestMethod(testMethod)
+  File "c:\users\admin\appdata\local\programs\python\python38\lib\unittest\case.py", line 633, in _callTestMethod
+    method()
+  File "D:\E护通\自动化\miniapp_auto\test\nurseorder_test.py", line 23, in test_04_check_nurse_order_success
+    self.nurseOrderFlow.check_order_success(para.search_text, para.service_demo)
+  File "D:\E护通\自动化\miniapp_auto\case\flows\nurseorderflow.py", line 13, in check_order_success
+    SearchFlow.search_flow(self, text)
+  File "D:\E护通\自动化\miniapp_auto\case\flows\searchflow.py", line 17, in search_flow
+    self.click_top_search()
+AttributeError: 'NurseOrderFlow' object has no attribute 'click_top_search'

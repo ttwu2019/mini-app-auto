@@ -1,0 +1,41 @@
+INFO  2022-11-23 10:06:33,288 minitest.py _miniSetUp      279 =========Current case: test_02_page_search_result=========
+INFO  2022-11-23 10:06:33,290 minitest.py _miniSetUp      280 package info: D:.E护通.自动化.miniapp_auto.case.searchPage_test, case info: SearchPageTest.test_02_page_search_result
+INFO  2022-11-23 10:06:33,291 basenative.py wrapper         23  call BaseNative.back_to_miniprogram
+INFO  2022-11-23 10:06:33,292 basenative.py back_to_miniprogram 528 try back_to_miniprogram 3
+INFO  2022-11-23 10:06:33,293 basenative.py wrapper         27  call BaseNative.back_to_miniprogram end
+INFO  2022-11-23 10:06:33,294 app.py     relaunch        387 ReLaunch: /pages/user/userindex
+DEBUG 2022-11-23 10:06:33,295 connection.py send_async      211 ASYNC_SEND > {"id": "09e9d75a-90ea-4c41-ab50-18336716b9cb", "method": "App.callWxMethod", "params": {"method": "reLaunch", "args": [{"url": "/pages/user/userindex"}]}}
+DEBUG 2022-11-23 10:06:33,366 connection.py _on_message     252 RECV < {"id":"09e9d75a-90ea-4c41-ab50-18336716b9cb","result":{"result":{"errMsg":"reLaunch:ok"}}}
+INFO  2022-11-23 10:06:33,368 connection.py _on_message     273 received async msg: 09e9d75a-90ea-4c41-ab50-18336716b9cb
+DEBUG 2022-11-23 10:06:33,832 connection.py _on_message     252 RECV < {"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"webviewId":6,"path":"pages/user/userindex","query":{},"openType":"reLaunch","__ts__":1669169193831},1669169193832]}}
+INFO  2022-11-23 10:06:33,834 app.py     _on_route_changed 588 Route changed, {'name': 'onAppRouteDone', 'args': [{'webviewId': 6, 'path': 'pages/user/userindex', 'query': {}, 'openType': 'reLaunch', '__ts__': 1669169193831}, 1669169193832]}
+DEBUG 2022-11-23 10:06:33,835 connection.py send            201 SEND > {"id":"57c61222-c12b-41ba-9c47-717d8f35db1b","method":"App.getCurrentPage","params":{}}
+DEBUG 2022-11-23 10:06:33,840 connection.py _on_message     252 RECV < {"id":"57c61222-c12b-41ba-9c47-717d8f35db1b","result":{"pageId":6,"path":"pages/user/userindex","query":{}}}
+INFO  2022-11-23 10:06:33,842 page.py    _get_elements_by_css 527 try to get elements: view[class="uh-bottom data-v-ec48ec48"]
+DEBUG 2022-11-23 10:06:33,843 connection.py send            201 SEND > {"id":"6b144bef-b364-4849-8e3d-9dbdae55d29e","method":"Page.getElements","params":{"selector":"view[class=\"uh-bottom data-v-ec48ec48\"]","pageId":6}}
+DEBUG 2022-11-23 10:06:33,941 connection.py _on_message     252 RECV < {"id":"6b144bef-b364-4849-8e3d-9dbdae55d29e","result":{"elements":[{"elementId":"e620cafb-9fd3-40a6-a2b8-d014d30b7d0a","tagName":"view"}]}}
+INFO  2022-11-23 10:06:33,943 page.py    _get_elements_by_css 534 find elements success: [<minium.miniprogram.base_driver.element.BaseElement object at 0x000001878A230EB0>]
+DEBUG 2022-11-23 10:06:33,945 connection.py send            201 SEND > {"id":"26c33290-b6fe-4812-8473-59ac8b92d6d5","method":"App.getCurrentPage","params":{}}
+DEBUG 2022-11-23 10:06:34,020 connection.py _on_message     252 RECV < {"id":"26c33290-b6fe-4812-8473-59ac8b92d6d5","result":{"pageId":6,"path":"pages/user/userindex","query":{}}}
+INFO  2022-11-23 10:06:34,021 page.py    _get_elements_by_css 527 try to get elements: view[class="uh-bottom data-v-ec48ec48"]
+DEBUG 2022-11-23 10:06:34,024 connection.py send            201 SEND > {"id":"c05663e2-acc0-44af-ad8b-e1be67e0a2a1","method":"Page.getElements","params":{"selector":"view[class=\"uh-bottom data-v-ec48ec48\"]","pageId":6}}
+DEBUG 2022-11-23 10:06:34,087 connection.py _on_message     252 RECV < {"id":"c05663e2-acc0-44af-ad8b-e1be67e0a2a1","result":{"elements":[{"elementId":"e620cafb-9fd3-40a6-a2b8-d014d30b7d0a","tagName":"view"}]}}
+INFO  2022-11-23 10:06:34,088 page.py    _get_elements_by_css 534 find elements success: [<minium.miniprogram.base_driver.element.BaseElement object at 0x000001878A230100>]
+DEBUG 2022-11-23 10:06:34,088 connection.py send            201 SEND > {"id":"931677d3-d04a-4efe-9965-77e95d2f82ef","method":"Element.tap","params":{"elementId":"e620cafb-9fd3-40a6-a2b8-d014d30b7d0a","pageId":6}}
+DEBUG 2022-11-23 10:06:34,187 connection.py _on_message     252 RECV < {"id":"931677d3-d04a-4efe-9965-77e95d2f82ef","result":{}}
+DEBUG 2022-11-23 10:06:34,189 minitest.py _miniTearDown   513 =========Current case Down: test_02_page_search_result=========
+INFO  2022-11-23 10:06:34,192 basenative.py wrapper         23  call BaseNative.get_start_up
+INFO  2022-11-23 10:06:34,193 basenative.py wrapper         27  call BaseNative.get_start_up end
+ERROR 2022-11-23 10:06:34,201 assertbase.py _teardown_collect 273 <bound method SearchPageTest.test_02_page_search_result of <case.searchPage_test.SearchPageTest testMethod=test_02_page_search_result>>
+Traceback (most recent call last):
+  File "c:\users\admin\appdata\local\programs\python\python38\lib\site-packages\minium\framework\libs\unittest\case.py", line 32, in testPartExecutor
+    yield
+  File "c:\users\admin\appdata\local\programs\python\python38\lib\site-packages\minium\framework\libs\unittest\case.py", line 118, in run
+    self._callTestMethod(testMethod)
+  File "c:\users\admin\appdata\local\programs\python\python38\lib\unittest\case.py", line 633, in _callTestMethod
+    method()
+  File "D:\E护通\自动化\miniapp_auto\case\searchPage_test.py", line 23, in test_02_page_search_result
+    self.searchFlow.check_search_results('院外居家服务')
+  File "D:\E护通\自动化\miniapp_auto\case\flows\searchflow.py", line 18, in check_search_results
+    self.input_search(self, text)
+TypeError: input_search() takes 2 positional arguments but 3 were given

@@ -1,0 +1,21 @@
+INFO  2022-11-22 16:27:04,894 minitest.py _miniSetUp      279 =========Current case: test_01_home_page_path=========
+INFO  2022-11-22 16:27:04,919 minitest.py _miniSetUp      280 package info: D:.E护通.自动化.miniapp_auto.case.homepage_test, case info: HomePageTest.test_01_home_page_path
+INFO  2022-11-22 16:27:04,923 basenative.py wrapper         23  call BaseNative.back_to_miniprogram
+INFO  2022-11-22 16:27:04,927 basenative.py back_to_miniprogram 528 try back_to_miniprogram 3
+INFO  2022-11-22 16:27:04,928 basenative.py wrapper         27  call BaseNative.back_to_miniprogram end
+INFO  2022-11-22 16:27:04,929 app.py     relaunch        387 ReLaunch: /pages/user/userindex
+DEBUG 2022-11-22 16:27:04,930 connection.py send_async      211 ASYNC_SEND > {"id": "d13ed833-db6a-4c2a-ab55-2014d6df8b1c", "method": "App.callWxMethod", "params": {"method": "reLaunch", "args": [{"url": "/pages/user/userindex"}]}}
+DEBUG 2022-11-22 16:27:05,009 connection.py _on_message     252 RECV < {"id":"d13ed833-db6a-4c2a-ab55-2014d6df8b1c","result":{"result":{"errMsg":"reLaunch:ok"}}}
+DEBUG 2022-11-22 16:27:05,010 connection.py _on_message     252 RECV < {"id":"d13ed833-db6a-4c2a-ab55-2014d6df8b1c","result":{"result":{"errMsg":"reLaunch:ok"}}}
+INFO  2022-11-22 16:27:05,012 connection.py _on_message     273 received async msg: d13ed833-db6a-4c2a-ab55-2014d6df8b1c
+INFO  2022-11-22 16:27:05,013 connection.py _on_message     273 received async msg: d13ed833-db6a-4c2a-ab55-2014d6df8b1c
+DEBUG 2022-11-22 16:27:05,812 connection.py _on_message     252 RECV < {"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"webviewId":4,"path":"pages/user/userindex","query":{},"openType":"reLaunch","__ts__":1669105625803},1669105625805]}}
+DEBUG 2022-11-22 16:27:05,813 connection.py _on_message     252 RECV < {"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"webviewId":4,"path":"pages/user/userindex","query":{},"openType":"reLaunch","__ts__":1669105625803},1669105625805]}}
+INFO  2022-11-22 16:27:05,816 app.py     _on_route_changed 588 Route changed, {'name': 'onAppRouteDone', 'args': [{'webviewId': 4, 'path': 'pages/user/userindex', 'query': {}, 'openType': 'reLaunch', '__ts__': 1669105625803}, 1669105625805]}
+DEBUG 2022-11-22 16:27:05,821 connection.py send            201 SEND > {"id":"66fbe37a-b1ab-411c-8c34-8bcf95acf84a","method":"App.getCurrentPage","params":{}}
+DEBUG 2022-11-22 16:27:05,836 connection.py _on_message     252 RECV < {"id":"66fbe37a-b1ab-411c-8c34-8bcf95acf84a","result":{"pageId":4,"path":"pages/user/userindex","query":{}}}
+DEBUG 2022-11-22 16:27:05,837 connection.py _on_message     252 RECV < {"id":"66fbe37a-b1ab-411c-8c34-8bcf95acf84a","result":{"pageId":4,"path":"pages/user/userindex","query":{}}}
+INFO  2022-11-22 16:27:05,841 connection.py _on_message     273 received async msg: 66fbe37a-b1ab-411c-8c34-8bcf95acf84a
+DEBUG 2022-11-22 16:27:06,005 minitest.py _miniTearDown   513 =========Current case Down: test_01_home_page_path=========
+INFO  2022-11-22 16:27:06,005 basenative.py wrapper         23  call BaseNative.get_start_up
+INFO  2022-11-22 16:27:06,006 basenative.py wrapper         27  call BaseNative.get_start_up end

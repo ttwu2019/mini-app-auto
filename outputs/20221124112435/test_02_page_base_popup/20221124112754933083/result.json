@@ -1,0 +1,37 @@
+{
+    "case_name": "test_02_page_base_popup",
+    "run_time": "20221124 11:27:54",
+    "test_type": "HomePageTest",
+    "case_doc": null,
+    "success": false,
+    "failures": "",
+    "errors": "Traceback (most recent call last):\n  File \"c:\\users\\admin\\appdata\\local\\programs\\python\\python38\\lib\\site-packages\\minium\\miniprogram\\wx_minium.py\", line 576, in connect_dev_tool\n    self._get_system_info()\n  File \"c:\\users\\admin\\appdata\\local\\programs\\python\\python38\\lib\\site-packages\\minium\\miniprogram\\wx_minium.py\", line 423, in _get_system_info\n    system_info = self.get_system_info()\n  File \"c:\\users\\admin\\appdata\\local\\programs\\python\\python38\\lib\\site-packages\\minium\\miniprogram\\base_driver\\minium_log.py\", line 131, in wrapper\n    result = func(*args, **kwargs)\n  File \"c:\\users\\admin\\appdata\\local\\programs\\python\\python38\\lib\\site-packages\\minium\\miniprogram\\wx_minium.py\", line 625, in get_system_info\n    self.call_wx_method(\"getSystemInfoSync\")\n  File \"c:\\users\\admin\\appdata\\local\\programs\\python\\python38\\lib\\site-packages\\minium\\miniprogram\\base_driver\\minium_log.py\", line 131, in wrapper\n    result = func(*args, **kwargs)\n  File \"c:\\users\\admin\\appdata\\local\\programs\\python\\python38\\lib\\site-packages\\minium\\miniprogram\\base_driver\\minium_object.py\", line 78, in call_wx_method\n    return self._call_wx_method(method=method, args=args, plugin_appid=plugin_appid)\n  File \"c:\\users\\admin\\appdata\\local\\programs\\python\\python38\\lib\\site-packages\\minium\\miniprogram\\base_driver\\minium_object.py\", line 304, in _call_wx_method\n    return self.connection.send(\"App.callWxMethod\", params)\n  File \"c:\\users\\admin\\appdata\\local\\programs\\python\\python38\\lib\\site-packages\\minium\\miniprogram\\base_driver\\connection.py\", line 203, in send\n    return self._receive_response(cmd)\n  File \"c:\\users\\admin\\appdata\\local\\programs\\python\\python38\\lib\\site-packages\\minium\\miniprogram\\base_driver\\connection.py\", line 230, in _receive_response\n    raise MiniTimeoutError(\nminium.framework.exception.MiniTimeoutError: [call App.callWxMethod] receive from remote timeout, id: db55e1a7-8230-4d51-ab9a-667ba5ee0326\n\nDuring handling of the above exception, another exception occurred:\n\nTraceback (most recent call last):\n  File \"c:\\users\\admin\\appdata\\local\\programs\\python\\python38\\lib\\site-packages\\minium\\miniprogram\\wx_minium.py\", line 530, in launch_dev_tool\n    self.connect_dev_tool()\n  File \"c:\\users\\admin\\appdata\\local\\programs\\python\\python38\\lib\\site-packages\\minium\\miniprogram\\base_driver\\minium_log.py\", line 131, in wrapper\n    result = func(*args, **kwargs)\n  File \"c:\\users\\admin\\appdata\\local\\programs\\python\\python38\\lib\\site-packages\\minium\\miniprogram\\wx_minium.py\", line 589, in connect_dev_tool\n    raise MiniConnectError(\nminium.framework.exception.MiniConnectError: three times try to connect Dev tool has all fail ...\n\nDuring handling of the above exception, another exception occurred:\n\nTraceback (most recent call last):\n  File \"c:\\users\\admin\\appdata\\local\\programs\\python\\python38\\lib\\site-packages\\minium\\framework\\libs\\unittest\\suite.py\", line 63, in _handleClassSetUp\n    _miniClassSetUp()\n  File \"c:\\users\\admin\\appdata\\local\\programs\\python\\python38\\lib\\site-packages\\minium\\framework\\minitest.py\", line 244, in _miniClassSetUp\n    native, mini, miniprogram = init_miniprogram(cls.CONFIG)\n  File \"c:\\users\\admin\\appdata\\local\\programs\\python\\python38\\lib\\site-packages\\minium\\framework\\minitest.py\", line 141, in init_miniprogram\n    mini = get_minium(cfg)\n  File \"c:\\users\\admin\\appdata\\local\\programs\\python\\python38\\lib\\site-packages\\minium\\framework\\minitest.py\", line 106, in get_minium\n    g_minium = minium.miniprogram.get_minium_driver(conf=cfg, native=g_native)\n  File \"c:\\users\\admin\\appdata\\local\\programs\\python\\python38\\lib\\site-packages\\minium\\miniprogram\\__init__.py\", line 28, in get_minium_driver\n    return APP[application](conf, *args, **kwargs)\n  File \"c:\\users\\admin\\appdata\\local\\programs\\python\\python38\\lib\\site-packages\\minium\\miniprogram\\wx_minium.py\", line 110, in __init__\n    self.launch_weapp()\n  File \"c:\\users\\admin\\appdata\\local\\programs\\python\\python38\\lib\\site-packages\\minium\\miniprogram\\base_driver\\minium_log.py\", line 131, in wrapper\n    result = func(*args, **kwargs)\n  File \"c:\\users\\admin\\appdata\\local\\programs\\python\\python38\\lib\\site-packages\\minium\\miniprogram\\wx_minium.py\", line 440, in launch_weapp\n    self.launch_dev_tool()\n  File \"c:\\users\\admin\\appdata\\local\\programs\\python\\python38\\lib\\site-packages\\minium\\miniprogram\\base_driver\\minium_log.py\", line 131, in wrapper\n    result = func(*args, **kwargs)\n  File \"c:\\users\\admin\\appdata\\local\\programs\\python\\python38\\lib\\site-packages\\minium\\miniprogram\\wx_minium.py\", line 551, in launch_dev_tool\n    raise MiniLaunchError(err_msg)\nminium.framework.exception.MiniLaunchError: Error: Port 9420 is in use (code 10)\n",
+    "start_timestamp": 1669260474.9340749,
+    "is_failure": false,
+    "is_error": true,
+    "module": "D:.E\u62a4\u901a.\u81ea\u52a8\u5316.miniapp_auto.test.homePage_test",
+    "package": "test",
+    "failed_line_num": -1,
+    "device": {},
+    "log_filename": "run.log",
+    "error_type": "MiniLaunchError",
+    "error_value": "Error: Port 9420 is in use (code 10)",
+    "error_stages": [
+        "_miniClassSetUp"
+    ],
+    "screen_info": [],
+    "check_list": [],
+    "assert_list": [],
+    "stop_timestamp": 1669260474.9360654,
+    "appId": "",
+    "appName": "",
+    "source": {
+        "code": [
+            "    def test_02_page_base_popup(self):\n",
+            "        print(\"\u68c0\u67e5\u9996\u9875\u6709\u5f39\u7a97==================\")\n",
+            "        self.homeFlow.check_homepage_popup()\n"
+        ],
+        "start": 26
+    },
+    "filename": "result.json"
+}

@@ -1,0 +1,27 @@
+INFO  2022-11-22 17:52:12,905 minitest.py _miniSetUp      279 =========Current case: test_03_page_search_result=========
+INFO  2022-11-22 17:52:12,907 minitest.py _miniSetUp      280 package info: D:.E护通.自动化.miniapp_auto.case.searchPage_test, case info: SearchPageTest.test_03_page_search_result
+INFO  2022-11-22 17:52:12,909 basenative.py wrapper         23  call BaseNative.back_to_miniprogram
+INFO  2022-11-22 17:52:12,909 basenative.py back_to_miniprogram 528 try back_to_miniprogram 3
+INFO  2022-11-22 17:52:12,910 basenative.py wrapper         27  call BaseNative.back_to_miniprogram end
+INFO  2022-11-22 17:52:12,911 app.py     relaunch        387 ReLaunch: /pages/user/userindex
+DEBUG 2022-11-22 17:52:12,912 connection.py send_async      211 ASYNC_SEND > {"id": "316b6f36-d5e7-492f-977b-53f4a54c9a79", "method": "App.callWxMethod", "params": {"method": "reLaunch", "args": [{"url": "/pages/user/userindex"}]}}
+DEBUG 2022-11-22 17:52:13,011 connection.py _on_message     252 RECV < {"id":"316b6f36-d5e7-492f-977b-53f4a54c9a79","result":{"result":{"errMsg":"reLaunch:ok"}}}
+INFO  2022-11-22 17:52:13,012 connection.py _on_message     273 received async msg: 316b6f36-d5e7-492f-977b-53f4a54c9a79
+DEBUG 2022-11-22 17:52:13,431 connection.py _on_message     252 RECV < {"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"webviewId":7,"path":"pages/user/userindex","query":{},"openType":"reLaunch","__ts__":1669110733429},1669110733430]}}
+INFO  2022-11-22 17:52:13,433 app.py     _on_route_changed 588 Route changed, {'name': 'onAppRouteDone', 'args': [{'webviewId': 7, 'path': 'pages/user/userindex', 'query': {}, 'openType': 'reLaunch', '__ts__': 1669110733429}, 1669110733430]}
+DEBUG 2022-11-22 17:52:13,435 minitest.py _miniTearDown   513 =========Current case Down: test_03_page_search_result=========
+INFO  2022-11-22 17:52:13,436 basenative.py wrapper         23  call BaseNative.get_start_up
+INFO  2022-11-22 17:52:13,436 basenative.py wrapper         27  call BaseNative.get_start_up end
+ERROR 2022-11-22 17:52:13,440 assertbase.py _teardown_collect 273 <bound method SearchPageTest.test_03_page_search_result of <case.searchPage_test.SearchPageTest testMethod=test_03_page_search_result>>
+Traceback (most recent call last):
+  File "c:\users\admin\appdata\local\programs\python\python38\lib\site-packages\minium\framework\libs\unittest\case.py", line 32, in testPartExecutor
+    yield
+  File "c:\users\admin\appdata\local\programs\python\python38\lib\site-packages\minium\framework\libs\unittest\case.py", line 118, in run
+    self._callTestMethod(testMethod)
+  File "c:\users\admin\appdata\local\programs\python\python38\lib\unittest\case.py", line 633, in _callTestMethod
+    method()
+  File "D:\E护通\自动化\miniapp_auto\case\searchPage_test.py", line 23, in test_03_page_search_result
+    self.searchPage.check_search_results('院外居家服务')
+  File "D:\E护通\自动化\miniapp_auto\case\pages\searchpage.py", line 25, in check_search_results
+    BaseSelector.waitToClick(SearchPage.homepage_locators['TOP_SEARCH_INPUT'])
+TypeError: waitToClick() missing 1 required positional argument: 'selector'

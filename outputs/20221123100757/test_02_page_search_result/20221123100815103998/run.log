@@ -1,0 +1,203 @@
+INFO  2022-11-23 10:08:15,106 minitest.py _miniSetUp      279 =========Current case: test_02_page_search_result=========
+INFO  2022-11-23 10:08:15,107 minitest.py _miniSetUp      280 package info: D:.E护通.自动化.miniapp_auto.case.searchPage_test, case info: SearchPageTest.test_02_page_search_result
+INFO  2022-11-23 10:08:15,111 basenative.py wrapper         23  call BaseNative.back_to_miniprogram
+INFO  2022-11-23 10:08:15,112 basenative.py back_to_miniprogram 528 try back_to_miniprogram 3
+INFO  2022-11-23 10:08:15,115 basenative.py wrapper         27  call BaseNative.back_to_miniprogram end
+INFO  2022-11-23 10:08:15,119 app.py     relaunch        387 ReLaunch: /pages/user/userindex
+DEBUG 2022-11-23 10:08:15,135 connection.py send_async      211 ASYNC_SEND > {"id": "640cc0e6-2adb-4c36-8c29-eff43e6511b7", "method": "App.callWxMethod", "params": {"method": "reLaunch", "args": [{"url": "/pages/user/userindex"}]}}
+DEBUG 2022-11-23 10:08:15,236 connection.py _on_message     252 RECV < {"id":"640cc0e6-2adb-4c36-8c29-eff43e6511b7","result":{"result":{"errMsg":"reLaunch:ok"}}}
+INFO  2022-11-23 10:08:15,238 connection.py _on_message     273 received async msg: 640cc0e6-2adb-4c36-8c29-eff43e6511b7
+DEBUG 2022-11-23 10:08:15,820 connection.py _on_message     252 RECV < {"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"webviewId":6,"path":"pages/user/userindex","query":{},"openType":"reLaunch","__ts__":1669169295818},1669169295819]}}
+INFO  2022-11-23 10:08:15,823 app.py     _on_route_changed 588 Route changed, {'name': 'onAppRouteDone', 'args': [{'webviewId': 6, 'path': 'pages/user/userindex', 'query': {}, 'openType': 'reLaunch', '__ts__': 1669169295818}, 1669169295819]}
+DEBUG 2022-11-23 10:08:15,825 connection.py send            201 SEND > {"id":"e3c30279-87c3-402b-a09a-8e219b17b3fc","method":"App.getCurrentPage","params":{}}
+DEBUG 2022-11-23 10:08:15,831 connection.py _on_message     252 RECV < {"id":"e3c30279-87c3-402b-a09a-8e219b17b3fc","result":{"pageId":6,"path":"pages/user/userindex","query":{}}}
+INFO  2022-11-23 10:08:15,836 page.py    _get_elements_by_css 527 try to get elements: view[class="uh-bottom data-v-ec48ec48"]
+DEBUG 2022-11-23 10:08:15,838 connection.py send            201 SEND > {"id":"a517b15c-fce2-496a-b6a8-b502b1942138","method":"Page.getElements","params":{"selector":"view[class=\"uh-bottom data-v-ec48ec48\"]","pageId":6}}
+DEBUG 2022-11-23 10:08:15,991 connection.py _on_message     252 RECV < {"id":"a517b15c-fce2-496a-b6a8-b502b1942138","result":{"elements":[{"elementId":"fb6c2443-4c0f-4128-850b-d725de1e33db","tagName":"view"}]}}
+INFO  2022-11-23 10:08:15,993 page.py    _get_elements_by_css 534 find elements success: [<minium.miniprogram.base_driver.element.BaseElement object at 0x00000195828747C0>]
+DEBUG 2022-11-23 10:08:15,993 connection.py send            201 SEND > {"id":"0a741e18-83e1-4355-99f9-7f3a4886e629","method":"App.getCurrentPage","params":{}}
+DEBUG 2022-11-23 10:08:16,000 connection.py _on_message     252 RECV < {"id":"0a741e18-83e1-4355-99f9-7f3a4886e629","result":{"pageId":6,"path":"pages/user/userindex","query":{}}}
+INFO  2022-11-23 10:08:16,003 page.py    _get_elements_by_css 527 try to get elements: view[class="uh-bottom data-v-ec48ec48"]
+DEBUG 2022-11-23 10:08:16,006 connection.py send            201 SEND > {"id":"291a2402-effb-4d2f-9900-4cfd1b0bcc51","method":"Page.getElements","params":{"selector":"view[class=\"uh-bottom data-v-ec48ec48\"]","pageId":6}}
+DEBUG 2022-11-23 10:08:16,047 connection.py _on_message     252 RECV < {"id":"291a2402-effb-4d2f-9900-4cfd1b0bcc51","result":{"elements":[{"elementId":"fb6c2443-4c0f-4128-850b-d725de1e33db","tagName":"view"}]}}
+INFO  2022-11-23 10:08:16,050 page.py    _get_elements_by_css 534 find elements success: [<minium.miniprogram.base_driver.element.BaseElement object at 0x00000195828C1250>]
+DEBUG 2022-11-23 10:08:16,051 connection.py send            201 SEND > {"id":"cd1c267c-2714-4901-9dee-3542fd482bd6","method":"Element.tap","params":{"elementId":"fb6c2443-4c0f-4128-850b-d725de1e33db","pageId":6}}
+DEBUG 2022-11-23 10:08:16,118 connection.py _on_message     252 RECV < {"id":"cd1c267c-2714-4901-9dee-3542fd482bd6","result":{}}
+DEBUG 2022-11-23 10:08:16,119 connection.py send            201 SEND > {"id":"7aefc278-f66d-46c2-89a7-9a9ad2754acb","method":"App.getCurrentPage","params":{}}
+DEBUG 2022-11-23 10:08:16,141 connection.py _on_message     252 RECV < {"id":"7aefc278-f66d-46c2-89a7-9a9ad2754acb","result":{"pageId":6,"path":"pages/user/userindex","query":{}}}
+INFO  2022-11-23 10:08:16,143 page.py    _get_elements_by_css 527 try to get elements: .input
+DEBUG 2022-11-23 10:08:16,144 connection.py send            201 SEND > {"id":"8c9b197e-f37e-4676-9975-2176e88aaf98","method":"Page.getElements","params":{"selector":".input","pageId":6}}
+DEBUG 2022-11-23 10:08:16,156 connection.py _on_message     252 RECV < {"id":"8c9b197e-f37e-4676-9975-2176e88aaf98","result":{"elements":[]}}
+WARNI 2022-11-23 10:08:16,157 page.py    _get_elements_by_css 532 Could not found any element '.input' you need
+INFO  2022-11-23 10:08:16,408 page.py    _get_elements_by_css 527 try to get elements: .input
+DEBUG 2022-11-23 10:08:16,409 connection.py send            201 SEND > {"id":"66a17518-755e-41a3-9e27-8f579ac9e2bb","method":"Page.getElements","params":{"selector":".input","pageId":6}}
+DEBUG 2022-11-23 10:08:16,687 connection.py _on_message     252 RECV < {"id":"66a17518-755e-41a3-9e27-8f579ac9e2bb","result":{"elements":[]}}
+WARNI 2022-11-23 10:08:16,694 page.py    _get_elements_by_css 532 Could not found any element '.input' you need
+INFO  2022-11-23 10:08:16,947 page.py    _get_elements_by_css 527 try to get elements: .input
+DEBUG 2022-11-23 10:08:16,953 connection.py send            201 SEND > {"id":"7f5726e3-b5e7-48c1-8503-1e4094a9efbd","method":"Page.getElements","params":{"selector":".input","pageId":6}}
+DEBUG 2022-11-23 10:08:17,152 connection.py _on_message     252 RECV < {"id":"7f5726e3-b5e7-48c1-8503-1e4094a9efbd","result":{"elements":[]}}
+WARNI 2022-11-23 10:08:17,153 page.py    _get_elements_by_css 532 Could not found any element '.input' you need
+INFO  2022-11-23 10:08:17,405 page.py    _get_elements_by_css 527 try to get elements: .input
+DEBUG 2022-11-23 10:08:17,412 connection.py send            201 SEND > {"id":"1256cc65-dc2a-4db6-9efc-b1aaa5439198","method":"Page.getElements","params":{"selector":".input","pageId":6}}
+DEBUG 2022-11-23 10:08:17,555 connection.py _on_message     252 RECV < {"id":"1256cc65-dc2a-4db6-9efc-b1aaa5439198","result":{"elements":[]}}
+WARNI 2022-11-23 10:08:17,556 page.py    _get_elements_by_css 532 Could not found any element '.input' you need
+INFO  2022-11-23 10:08:17,807 page.py    _get_elements_by_css 527 try to get elements: .input
+DEBUG 2022-11-23 10:08:17,807 connection.py send            201 SEND > {"id":"b2e0ac9d-e0c0-4c15-9a60-71e0067a6883","method":"Page.getElements","params":{"selector":".input","pageId":6}}
+DEBUG 2022-11-23 10:08:18,075 connection.py _on_message     252 RECV < {"id":"b2e0ac9d-e0c0-4c15-9a60-71e0067a6883","result":{"elements":[]}}
+WARNI 2022-11-23 10:08:18,076 page.py    _get_elements_by_css 532 Could not found any element '.input' you need
+INFO  2022-11-23 10:08:18,327 page.py    _get_elements_by_css 527 try to get elements: .input
+DEBUG 2022-11-23 10:08:18,327 connection.py send            201 SEND > {"id":"936b1e28-37fb-4945-88af-58cb2a1adb78","method":"Page.getElements","params":{"selector":".input","pageId":6}}
+DEBUG 2022-11-23 10:08:18,330 connection.py _on_message     252 RECV < {"id":"936b1e28-37fb-4945-88af-58cb2a1adb78","result":{"elements":[]}}
+WARNI 2022-11-23 10:08:18,331 page.py    _get_elements_by_css 532 Could not found any element '.input' you need
+INFO  2022-11-23 10:08:18,582 page.py    _get_elements_by_css 527 try to get elements: .input
+DEBUG 2022-11-23 10:08:18,582 connection.py send            201 SEND > {"id":"18c2c7e2-a8ef-4cb9-ad33-6f8c03e77a6c","method":"Page.getElements","params":{"selector":".input","pageId":6}}
+DEBUG 2022-11-23 10:08:18,640 connection.py _on_message     252 RECV < {"id":"18c2c7e2-a8ef-4cb9-ad33-6f8c03e77a6c","result":{"elements":[]}}
+WARNI 2022-11-23 10:08:18,641 page.py    _get_elements_by_css 532 Could not found any element '.input' you need
+INFO  2022-11-23 10:08:18,892 page.py    _get_elements_by_css 527 try to get elements: .input
+DEBUG 2022-11-23 10:08:18,892 connection.py send            201 SEND > {"id":"c36c7d55-e653-4fc6-9a23-6db1f9c9c14e","method":"Page.getElements","params":{"selector":".input","pageId":6}}
+DEBUG 2022-11-23 10:08:19,173 connection.py _on_message     252 RECV < {"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"webviewId":7,"path":"pageuser/searchpage","query":{"pointsSource":"1"},"openType":"navigateTo","__ts__":1669169299118},1669169299119]}}
+INFO  2022-11-23 10:08:19,176 app.py     _on_route_changed 588 Route changed, {'name': 'onAppRouteDone', 'args': [{'webviewId': 7, 'path': 'pageuser/searchpage', 'query': {'pointsSource': '1'}, 'openType': 'navigateTo', '__ts__': 1669169299118}, 1669169299119]}
+DEBUG 2022-11-23 10:08:19,180 connection.py _on_message     252 RECV < {"id":"c36c7d55-e653-4fc6-9a23-6db1f9c9c14e","result":{"elements":[]}}
+WARNI 2022-11-23 10:08:19,182 page.py    _get_elements_by_css 532 Could not found any element '.input' you need
+INFO  2022-11-23 10:08:19,436 page.py    _get_elements_by_css 527 try to get elements: .input
+DEBUG 2022-11-23 10:08:19,436 connection.py send            201 SEND > {"id":"120601fe-9899-42bf-ad4b-64e8df7493b3","method":"Page.getElements","params":{"selector":".input","pageId":6}}
+DEBUG 2022-11-23 10:08:19,471 connection.py _on_message     252 RECV < {"id":"120601fe-9899-42bf-ad4b-64e8df7493b3","result":{"elements":[]}}
+WARNI 2022-11-23 10:08:19,472 page.py    _get_elements_by_css 532 Could not found any element '.input' you need
+INFO  2022-11-23 10:08:19,723 page.py    _get_elements_by_css 527 try to get elements: .input
+DEBUG 2022-11-23 10:08:19,725 connection.py send            201 SEND > {"id":"6e597748-43dc-4a46-ba20-8aa24c7b2160","method":"Page.getElements","params":{"selector":".input","pageId":6}}
+DEBUG 2022-11-23 10:08:19,736 connection.py _on_message     252 RECV < {"id":"6e597748-43dc-4a46-ba20-8aa24c7b2160","result":{"elements":[]}}
+WARNI 2022-11-23 10:08:19,738 page.py    _get_elements_by_css 532 Could not found any element '.input' you need
+INFO  2022-11-23 10:08:19,989 page.py    _get_elements_by_css 527 try to get elements: .input
+DEBUG 2022-11-23 10:08:19,991 connection.py send            201 SEND > {"id":"a310d2b4-736b-4dff-a601-e2957efbdb0f","method":"Page.getElements","params":{"selector":".input","pageId":6}}
+DEBUG 2022-11-23 10:08:20,058 connection.py _on_message     252 RECV < {"id":"a310d2b4-736b-4dff-a601-e2957efbdb0f","result":{"elements":[]}}
+WARNI 2022-11-23 10:08:20,059 page.py    _get_elements_by_css 532 Could not found any element '.input' you need
+INFO  2022-11-23 10:08:20,310 page.py    _get_elements_by_css 527 try to get elements: .input
+DEBUG 2022-11-23 10:08:20,310 connection.py send            201 SEND > {"id":"6fe2bb22-5163-4e2b-b35b-7a7913539f27","method":"Page.getElements","params":{"selector":".input","pageId":6}}
+DEBUG 2022-11-23 10:08:20,313 connection.py _on_message     252 RECV < {"id":"6fe2bb22-5163-4e2b-b35b-7a7913539f27","result":{"elements":[]}}
+WARNI 2022-11-23 10:08:20,314 page.py    _get_elements_by_css 532 Could not found any element '.input' you need
+INFO  2022-11-23 10:08:20,565 page.py    _get_elements_by_css 527 try to get elements: .input
+DEBUG 2022-11-23 10:08:20,565 connection.py send            201 SEND > {"id":"13820553-8d8c-465e-a672-da23c025537b","method":"Page.getElements","params":{"selector":".input","pageId":6}}
+DEBUG 2022-11-23 10:08:20,568 connection.py _on_message     252 RECV < {"id":"13820553-8d8c-465e-a672-da23c025537b","result":{"elements":[]}}
+WARNI 2022-11-23 10:08:20,568 page.py    _get_elements_by_css 532 Could not found any element '.input' you need
+INFO  2022-11-23 10:08:20,819 page.py    _get_elements_by_css 527 try to get elements: .input
+DEBUG 2022-11-23 10:08:20,819 connection.py send            201 SEND > {"id":"3fafced5-6b7c-4a8b-9d80-58cf26155729","method":"Page.getElements","params":{"selector":".input","pageId":6}}
+DEBUG 2022-11-23 10:08:20,823 connection.py _on_message     252 RECV < {"id":"3fafced5-6b7c-4a8b-9d80-58cf26155729","result":{"elements":[]}}
+WARNI 2022-11-23 10:08:20,823 page.py    _get_elements_by_css 532 Could not found any element '.input' you need
+INFO  2022-11-23 10:08:21,075 page.py    _get_elements_by_css 527 try to get elements: .input
+DEBUG 2022-11-23 10:08:21,075 connection.py send            201 SEND > {"id":"960a0da5-0321-43f0-8272-7a1beed78971","method":"Page.getElements","params":{"selector":".input","pageId":6}}
+DEBUG 2022-11-23 10:08:21,079 connection.py _on_message     252 RECV < {"id":"960a0da5-0321-43f0-8272-7a1beed78971","result":{"elements":[]}}
+WARNI 2022-11-23 10:08:21,080 page.py    _get_elements_by_css 532 Could not found any element '.input' you need
+INFO  2022-11-23 10:08:21,330 page.py    _get_elements_by_css 527 try to get elements: .input
+DEBUG 2022-11-23 10:08:21,330 connection.py send            201 SEND > {"id":"7d6b5965-eb25-423d-b2e1-f59989d0bc60","method":"Page.getElements","params":{"selector":".input","pageId":6}}
+DEBUG 2022-11-23 10:08:21,333 connection.py _on_message     252 RECV < {"id":"7d6b5965-eb25-423d-b2e1-f59989d0bc60","result":{"elements":[]}}
+WARNI 2022-11-23 10:08:21,333 page.py    _get_elements_by_css 532 Could not found any element '.input' you need
+INFO  2022-11-23 10:08:21,584 page.py    _get_elements_by_css 527 try to get elements: .input
+DEBUG 2022-11-23 10:08:21,584 connection.py send            201 SEND > {"id":"8d45798a-4e34-4c2c-a85b-84df74500a7b","method":"Page.getElements","params":{"selector":".input","pageId":6}}
+DEBUG 2022-11-23 10:08:21,588 connection.py _on_message     252 RECV < {"id":"8d45798a-4e34-4c2c-a85b-84df74500a7b","result":{"elements":[]}}
+WARNI 2022-11-23 10:08:21,589 page.py    _get_elements_by_css 532 Could not found any element '.input' you need
+INFO  2022-11-23 10:08:21,840 page.py    _get_elements_by_css 527 try to get elements: .input
+DEBUG 2022-11-23 10:08:21,840 connection.py send            201 SEND > {"id":"dcf169fd-d2e9-4506-bf80-c5961b2d8f06","method":"Page.getElements","params":{"selector":".input","pageId":6}}
+DEBUG 2022-11-23 10:08:21,843 connection.py _on_message     252 RECV < {"id":"dcf169fd-d2e9-4506-bf80-c5961b2d8f06","result":{"elements":[]}}
+WARNI 2022-11-23 10:08:21,844 page.py    _get_elements_by_css 532 Could not found any element '.input' you need
+INFO  2022-11-23 10:08:22,094 page.py    _get_elements_by_css 527 try to get elements: .input
+DEBUG 2022-11-23 10:08:22,095 connection.py send            201 SEND > {"id":"da9a372e-09c1-462e-8cc2-6203a237a49b","method":"Page.getElements","params":{"selector":".input","pageId":6}}
+DEBUG 2022-11-23 10:08:22,099 connection.py _on_message     252 RECV < {"id":"da9a372e-09c1-462e-8cc2-6203a237a49b","result":{"elements":[]}}
+WARNI 2022-11-23 10:08:22,099 page.py    _get_elements_by_css 532 Could not found any element '.input' you need
+INFO  2022-11-23 10:08:22,350 page.py    _get_elements_by_css 527 try to get elements: .input
+DEBUG 2022-11-23 10:08:22,350 connection.py send            201 SEND > {"id":"7693e0d4-a2a7-410f-8169-8f5ea84ac488","method":"Page.getElements","params":{"selector":".input","pageId":6}}
+DEBUG 2022-11-23 10:08:22,352 connection.py _on_message     252 RECV < {"id":"7693e0d4-a2a7-410f-8169-8f5ea84ac488","result":{"elements":[]}}
+WARNI 2022-11-23 10:08:22,354 page.py    _get_elements_by_css 532 Could not found any element '.input' you need
+INFO  2022-11-23 10:08:22,605 page.py    _get_elements_by_css 527 try to get elements: .input
+DEBUG 2022-11-23 10:08:22,606 connection.py send            201 SEND > {"id":"f683e651-bd0e-4215-81fa-d3d6e9faa49c","method":"Page.getElements","params":{"selector":".input","pageId":6}}
+DEBUG 2022-11-23 10:08:22,608 connection.py _on_message     252 RECV < {"id":"f683e651-bd0e-4215-81fa-d3d6e9faa49c","result":{"elements":[]}}
+WARNI 2022-11-23 10:08:22,609 page.py    _get_elements_by_css 532 Could not found any element '.input' you need
+INFO  2022-11-23 10:08:22,859 page.py    _get_elements_by_css 527 try to get elements: .input
+DEBUG 2022-11-23 10:08:22,861 connection.py send            201 SEND > {"id":"f0848314-c525-42ab-8f3d-71ee6d3318e5","method":"Page.getElements","params":{"selector":".input","pageId":6}}
+DEBUG 2022-11-23 10:08:22,864 connection.py _on_message     252 RECV < {"id":"f0848314-c525-42ab-8f3d-71ee6d3318e5","result":{"elements":[]}}
+WARNI 2022-11-23 10:08:22,864 page.py    _get_elements_by_css 532 Could not found any element '.input' you need
+INFO  2022-11-23 10:08:23,116 page.py    _get_elements_by_css 527 try to get elements: .input
+DEBUG 2022-11-23 10:08:23,116 connection.py send            201 SEND > {"id":"b2705365-c51a-4b58-ba3a-06a0039127f3","method":"Page.getElements","params":{"selector":".input","pageId":6}}
+DEBUG 2022-11-23 10:08:23,119 connection.py _on_message     252 RECV < {"id":"b2705365-c51a-4b58-ba3a-06a0039127f3","result":{"elements":[]}}
+WARNI 2022-11-23 10:08:23,120 page.py    _get_elements_by_css 532 Could not found any element '.input' you need
+INFO  2022-11-23 10:08:23,370 page.py    _get_elements_by_css 527 try to get elements: .input
+DEBUG 2022-11-23 10:08:23,371 connection.py send            201 SEND > {"id":"b5e33ca5-c4d1-477f-b271-8d5b9e3a91e5","method":"Page.getElements","params":{"selector":".input","pageId":6}}
+DEBUG 2022-11-23 10:08:23,375 connection.py _on_message     252 RECV < {"id":"b5e33ca5-c4d1-477f-b271-8d5b9e3a91e5","result":{"elements":[]}}
+WARNI 2022-11-23 10:08:23,375 page.py    _get_elements_by_css 532 Could not found any element '.input' you need
+INFO  2022-11-23 10:08:23,627 page.py    _get_elements_by_css 527 try to get elements: .input
+DEBUG 2022-11-23 10:08:23,627 connection.py send            201 SEND > {"id":"4c7a79bb-3fb7-422b-a692-b4da1639c6b4","method":"Page.getElements","params":{"selector":".input","pageId":6}}
+DEBUG 2022-11-23 10:08:23,630 connection.py _on_message     252 RECV < {"id":"4c7a79bb-3fb7-422b-a692-b4da1639c6b4","result":{"elements":[]}}
+WARNI 2022-11-23 10:08:23,631 page.py    _get_elements_by_css 532 Could not found any element '.input' you need
+INFO  2022-11-23 10:08:23,882 page.py    _get_elements_by_css 527 try to get elements: .input
+DEBUG 2022-11-23 10:08:23,882 connection.py send            201 SEND > {"id":"9bb4fae4-d580-42b2-ad5e-081af2e7acf9","method":"Page.getElements","params":{"selector":".input","pageId":6}}
+DEBUG 2022-11-23 10:08:23,885 connection.py _on_message     252 RECV < {"id":"9bb4fae4-d580-42b2-ad5e-081af2e7acf9","result":{"elements":[]}}
+WARNI 2022-11-23 10:08:23,886 page.py    _get_elements_by_css 532 Could not found any element '.input' you need
+INFO  2022-11-23 10:08:24,137 page.py    _get_elements_by_css 527 try to get elements: .input
+DEBUG 2022-11-23 10:08:24,137 connection.py send            201 SEND > {"id":"aa717df0-8455-432d-9c5f-18e541352ae3","method":"Page.getElements","params":{"selector":".input","pageId":6}}
+DEBUG 2022-11-23 10:08:24,140 connection.py _on_message     252 RECV < {"id":"aa717df0-8455-432d-9c5f-18e541352ae3","result":{"elements":[]}}
+WARNI 2022-11-23 10:08:24,141 page.py    _get_elements_by_css 532 Could not found any element '.input' you need
+INFO  2022-11-23 10:08:24,392 page.py    _get_elements_by_css 527 try to get elements: .input
+DEBUG 2022-11-23 10:08:24,392 connection.py send            201 SEND > {"id":"76b4a322-9a5f-4eb3-81f2-54d8b57a9807","method":"Page.getElements","params":{"selector":".input","pageId":6}}
+DEBUG 2022-11-23 10:08:24,395 connection.py _on_message     252 RECV < {"id":"76b4a322-9a5f-4eb3-81f2-54d8b57a9807","result":{"elements":[]}}
+WARNI 2022-11-23 10:08:24,395 page.py    _get_elements_by_css 532 Could not found any element '.input' you need
+INFO  2022-11-23 10:08:24,645 page.py    _get_elements_by_css 527 try to get elements: .input
+DEBUG 2022-11-23 10:08:24,645 connection.py send            201 SEND > {"id":"94e37ed9-d8ba-4730-be31-65c96eb2ee08","method":"Page.getElements","params":{"selector":".input","pageId":6}}
+DEBUG 2022-11-23 10:08:24,648 connection.py _on_message     252 RECV < {"id":"94e37ed9-d8ba-4730-be31-65c96eb2ee08","result":{"elements":[]}}
+WARNI 2022-11-23 10:08:24,648 page.py    _get_elements_by_css 532 Could not found any element '.input' you need
+INFO  2022-11-23 10:08:24,900 page.py    _get_elements_by_css 527 try to get elements: .input
+DEBUG 2022-11-23 10:08:24,900 connection.py send            201 SEND > {"id":"d16939f7-5119-46ad-86ab-fd1913d89d7f","method":"Page.getElements","params":{"selector":".input","pageId":6}}
+DEBUG 2022-11-23 10:08:24,903 connection.py _on_message     252 RECV < {"id":"d16939f7-5119-46ad-86ab-fd1913d89d7f","result":{"elements":[]}}
+WARNI 2022-11-23 10:08:24,903 page.py    _get_elements_by_css 532 Could not found any element '.input' you need
+INFO  2022-11-23 10:08:25,154 page.py    _get_elements_by_css 527 try to get elements: .input
+DEBUG 2022-11-23 10:08:25,154 connection.py send            201 SEND > {"id":"77b20261-cffd-43a0-819d-c34bfa086268","method":"Page.getElements","params":{"selector":".input","pageId":6}}
+DEBUG 2022-11-23 10:08:25,158 connection.py _on_message     252 RECV < {"id":"77b20261-cffd-43a0-819d-c34bfa086268","result":{"elements":[]}}
+WARNI 2022-11-23 10:08:25,159 page.py    _get_elements_by_css 532 Could not found any element '.input' you need
+INFO  2022-11-23 10:08:25,410 page.py    _get_elements_by_css 527 try to get elements: .input
+DEBUG 2022-11-23 10:08:25,410 connection.py send            201 SEND > {"id":"585ecfff-5a60-4ae7-a943-c50c8dd6fd54","method":"Page.getElements","params":{"selector":".input","pageId":6}}
+DEBUG 2022-11-23 10:08:25,413 connection.py _on_message     252 RECV < {"id":"585ecfff-5a60-4ae7-a943-c50c8dd6fd54","result":{"elements":[]}}
+WARNI 2022-11-23 10:08:25,413 page.py    _get_elements_by_css 532 Could not found any element '.input' you need
+INFO  2022-11-23 10:08:25,665 page.py    _get_elements_by_css 527 try to get elements: .input
+DEBUG 2022-11-23 10:08:25,667 connection.py send            201 SEND > {"id":"dd430589-f7f7-4589-ad41-0cd70a6c6b77","method":"Page.getElements","params":{"selector":".input","pageId":6}}
+DEBUG 2022-11-23 10:08:25,675 connection.py _on_message     252 RECV < {"id":"dd430589-f7f7-4589-ad41-0cd70a6c6b77","result":{"elements":[]}}
+WARNI 2022-11-23 10:08:25,675 page.py    _get_elements_by_css 532 Could not found any element '.input' you need
+INFO  2022-11-23 10:08:25,926 page.py    _get_elements_by_css 527 try to get elements: .input
+DEBUG 2022-11-23 10:08:25,926 connection.py send            201 SEND > {"id":"4e15f7f9-e59f-4d7a-8d02-a57489d14657","method":"Page.getElements","params":{"selector":".input","pageId":6}}
+DEBUG 2022-11-23 10:08:25,930 connection.py _on_message     252 RECV < {"id":"4e15f7f9-e59f-4d7a-8d02-a57489d14657","result":{"elements":[]}}
+WARNI 2022-11-23 10:08:25,930 page.py    _get_elements_by_css 532 Could not found any element '.input' you need
+DEBUG 2022-11-23 10:08:26,182 connection.py send            201 SEND > {"id":"15cd109e-2f8a-42fe-ab05-7b022dad3f89","method":"App.getCurrentPage","params":{}}
+DEBUG 2022-11-23 10:08:26,185 connection.py _on_message     252 RECV < {"id":"15cd109e-2f8a-42fe-ab05-7b022dad3f89","result":{"pageId":7,"path":"pageuser/searchpage","query":{"pointsSource":"1"}}}
+INFO  2022-11-23 10:08:26,185 page.py    _get_elements_by_css 527 try to get elements: .input
+DEBUG 2022-11-23 10:08:26,186 connection.py send            201 SEND > {"id":"88c9e4d5-9cf3-4ac4-a3e8-cc9d05d14aef","method":"Page.getElements","params":{"selector":".input","pageId":7}}
+DEBUG 2022-11-23 10:08:26,188 connection.py _on_message     252 RECV < {"id":"88c9e4d5-9cf3-4ac4-a3e8-cc9d05d14aef","result":{"elements":[{"elementId":"4ed53d7e-1978-41ca-9b80-28489a5b1daf","tagName":"input"}]}}
+INFO  2022-11-23 10:08:26,189 page.py    _get_elements_by_css 534 find elements success: [<minium.miniprogram.base_driver.element.FormElement object at 0x00000195828C1880>]
+DEBUG 2022-11-23 10:08:26,189 connection.py send            201 SEND > {"id":"7b9b4017-c6db-4b44-8f43-1f7ef565c637","method":"Element.callFunction","params":{"functionName":"input.input","args":["\u9662\u5916\u5c45\u5bb6\u670d\u52a1"],"elementId":"4ed53d7e-1978-41ca-9b80-28489a5b1daf","pageId":7}}
+DEBUG 2022-11-23 10:08:26,204 connection.py _on_message     252 RECV < {"id":"7b9b4017-c6db-4b44-8f43-1f7ef565c637","result":{}}
+DEBUG 2022-11-23 10:08:26,205 connection.py send            201 SEND > {"id":"c858f493-39e6-4775-8443-e88313a94635","method":"App.getCurrentPage","params":{}}
+DEBUG 2022-11-23 10:08:26,207 connection.py _on_message     252 RECV < {"id":"c858f493-39e6-4775-8443-e88313a94635","result":{"pageId":7,"path":"pageuser/searchpage","query":{"pointsSource":"1"}}}
+INFO  2022-11-23 10:08:26,208 page.py    _get_elements_by_css 527 try to get elements: .searchBtn
+DEBUG 2022-11-23 10:08:26,208 connection.py send            201 SEND > {"id":"7dab57f7-7bb8-42a8-8fcd-69304a263743","method":"Page.getElements","params":{"selector":".searchBtn","pageId":7}}
+DEBUG 2022-11-23 10:08:26,222 connection.py _on_message     252 RECV < {"id":"7dab57f7-7bb8-42a8-8fcd-69304a263743","result":{"elements":[{"elementId":"c3d1bc22-0e90-401d-8828-6884dcd12d31","tagName":"view"}]}}
+INFO  2022-11-23 10:08:26,222 page.py    _get_elements_by_css 534 find elements success: [<minium.miniprogram.base_driver.element.BaseElement object at 0x0000019582884CD0>]
+DEBUG 2022-11-23 10:08:26,223 connection.py send            201 SEND > {"id":"76188f20-93be-4479-ba8a-735b0dd4a060","method":"App.getCurrentPage","params":{}}
+DEBUG 2022-11-23 10:08:26,228 connection.py _on_message     252 RECV < {"id":"76188f20-93be-4479-ba8a-735b0dd4a060","result":{"pageId":7,"path":"pageuser/searchpage","query":{"pointsSource":"1"}}}
+INFO  2022-11-23 10:08:26,233 page.py    _get_elements_by_css 527 try to get elements: .searchBtn
+DEBUG 2022-11-23 10:08:26,234 connection.py send            201 SEND > {"id":"9e7f0e20-7ad1-43b3-9a6a-cc9ed9339a36","method":"Page.getElements","params":{"selector":".searchBtn","pageId":7}}
+DEBUG 2022-11-23 10:08:26,239 connection.py _on_message     252 RECV < {"id":"9e7f0e20-7ad1-43b3-9a6a-cc9ed9339a36","result":{"elements":[{"elementId":"c3d1bc22-0e90-401d-8828-6884dcd12d31","tagName":"view"}]}}
+INFO  2022-11-23 10:08:26,240 page.py    _get_elements_by_css 534 find elements success: [<minium.miniprogram.base_driver.element.BaseElement object at 0x00000195828C1FD0>]
+DEBUG 2022-11-23 10:08:26,245 connection.py send            201 SEND > {"id":"a184ca14-776e-4014-a8a3-cbff37fe3166","method":"Element.tap","params":{"elementId":"c3d1bc22-0e90-401d-8828-6884dcd12d31","pageId":7}}
+DEBUG 2022-11-23 10:08:26,285 connection.py _on_message     252 RECV < {"id":"a184ca14-776e-4014-a8a3-cbff37fe3166","result":{}}
+DEBUG 2022-11-23 10:08:26,286 minitest.py _miniTearDown   513 =========Current case Down: test_02_page_search_result=========
+INFO  2022-11-23 10:08:26,286 basenative.py wrapper         23  call BaseNative.get_start_up
+INFO  2022-11-23 10:08:26,287 basenative.py wrapper         27  call BaseNative.get_start_up end
+ERROR 2022-11-23 10:08:26,291 assertbase.py _teardown_collect 273 <bound method SearchPageTest.test_02_page_search_result of <case.searchPage_test.SearchPageTest testMethod=test_02_page_search_result>>
+Traceback (most recent call last):
+  File "c:\users\admin\appdata\local\programs\python\python38\lib\site-packages\minium\framework\libs\unittest\case.py", line 32, in testPartExecutor
+    yield
+  File "c:\users\admin\appdata\local\programs\python\python38\lib\site-packages\minium\framework\libs\unittest\case.py", line 118, in run
+    self._callTestMethod(testMethod)
+  File "c:\users\admin\appdata\local\programs\python\python38\lib\unittest\case.py", line 633, in _callTestMethod
+    method()
+  File "D:\E护通\自动化\miniapp_auto\case\searchPage_test.py", line 23, in test_02_page_search_result
+    self.searchFlow.check_search_results('院外居家服务')
+  File "D:\E护通\自动化\miniapp_auto\case\flows\searchflow.py", line 20, in check_search_results
+    texts = self.get_results_texts()
+AttributeError: 'SearchFlow' object has no attribute 'get_results_texts'

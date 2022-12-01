@@ -1,0 +1,43 @@
+INFO  2022-11-24 15:12:30,843 minitest.py _miniSetUp      279 =========Current case: test_04_check_nurse_order_success=========
+INFO  2022-11-24 15:12:30,846 minitest.py _miniSetUp      280 package info: D:.E护通.自动化.miniapp_auto.test.nurseorder_test, case info: NurseOrderTest.test_04_check_nurse_order_success
+INFO  2022-11-24 15:12:30,848 basenative.py wrapper         23  call BaseNative.back_to_miniprogram
+INFO  2022-11-24 15:12:30,848 basenative.py back_to_miniprogram 528 try back_to_miniprogram 3
+INFO  2022-11-24 15:12:30,849 basenative.py wrapper         27  call BaseNative.back_to_miniprogram end
+INFO  2022-11-24 15:12:30,850 app.py     relaunch        387 ReLaunch: /pages/user/userindex
+DEBUG 2022-11-24 15:12:30,851 connection.py send_async      211 ASYNC_SEND > {"id": "adf84b21-931e-4d40-8fb0-8c76c27bfde3", "method": "App.callWxMethod", "params": {"method": "reLaunch", "args": [{"url": "/pages/user/userindex"}]}}
+DEBUG 2022-11-24 15:12:30,974 connection.py _on_message     252 RECV < {"id":"adf84b21-931e-4d40-8fb0-8c76c27bfde3","result":{"result":{"errMsg":"reLaunch:ok"}}}
+INFO  2022-11-24 15:12:30,975 connection.py _on_message     273 received async msg: adf84b21-931e-4d40-8fb0-8c76c27bfde3
+DEBUG 2022-11-24 15:12:31,800 connection.py _on_message     252 RECV < {"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"webviewId":4,"path":"pages/user/userindex","query":{},"openType":"reLaunch","__ts__":1669273951798},1669273951799]}}
+INFO  2022-11-24 15:12:31,802 app.py     _on_route_changed 588 Route changed, {'name': 'onAppRouteDone', 'args': [{'webviewId': 4, 'path': 'pages/user/userindex', 'query': {}, 'openType': 'reLaunch', '__ts__': 1669273951798}, 1669273951799]}
+DEBUG 2022-11-24 15:12:31,803 connection.py send            201 SEND > {"id":"ba5ae44e-5a6b-492e-a790-1a7420ae4e06","method":"App.getCurrentPage","params":{}}
+DEBUG 2022-11-24 15:12:31,891 connection.py _on_message     252 RECV < {"id":"ba5ae44e-5a6b-492e-a790-1a7420ae4e06","result":{"pageId":4,"path":"pages/user/userindex","query":{}}}
+INFO  2022-11-24 15:12:31,893 page.py    _get_elements_by_css 527 try to get elements: view[class="uh-bottom data-v-ec48ec48"]
+DEBUG 2022-11-24 15:12:31,896 connection.py send            201 SEND > {"id":"7a987801-0f0f-410c-88d7-b05ddc21520a","method":"Page.getElements","params":{"selector":"view[class=\"uh-bottom data-v-ec48ec48\"]","pageId":4}}
+DEBUG 2022-11-24 15:12:32,118 connection.py _on_message     252 RECV < {"id":"7a987801-0f0f-410c-88d7-b05ddc21520a","result":{"elements":[{"elementId":"f59d0896-7bda-41ab-8705-3cacdb3f7487","tagName":"view"}]}}
+INFO  2022-11-24 15:12:32,120 page.py    _get_elements_by_css 534 find elements success: [<minium.miniprogram.base_driver.element.BaseElement object at 0x000001B041A48EB0>]
+DEBUG 2022-11-24 15:12:32,121 connection.py send            201 SEND > {"id":"ab4900c5-9f9c-45f0-b9c3-dc85750afb2f","method":"App.getCurrentPage","params":{}}
+DEBUG 2022-11-24 15:12:32,127 connection.py _on_message     252 RECV < {"id":"ab4900c5-9f9c-45f0-b9c3-dc85750afb2f","result":{"pageId":4,"path":"pages/user/userindex","query":{}}}
+INFO  2022-11-24 15:12:32,129 page.py    _get_elements_by_css 527 try to get elements: view[class="uh-bottom data-v-ec48ec48"]
+DEBUG 2022-11-24 15:12:32,131 connection.py send            201 SEND > {"id":"a6c34a11-0dfa-4ca6-9601-960eaa6bde92","method":"Page.getElements","params":{"selector":"view[class=\"uh-bottom data-v-ec48ec48\"]","pageId":4}}
+DEBUG 2022-11-24 15:12:32,253 connection.py _on_message     252 RECV < {"id":"a6c34a11-0dfa-4ca6-9601-960eaa6bde92","result":{"elements":[{"elementId":"f59d0896-7bda-41ab-8705-3cacdb3f7487","tagName":"view"}]}}
+INFO  2022-11-24 15:12:32,254 page.py    _get_elements_by_css 534 find elements success: [<minium.miniprogram.base_driver.element.BaseElement object at 0x000001B041A48D30>]
+DEBUG 2022-11-24 15:12:32,255 connection.py send            201 SEND > {"id":"9b47c07d-c312-4e51-a91f-81f2dfe67f1a","method":"Element.tap","params":{"elementId":"f59d0896-7bda-41ab-8705-3cacdb3f7487","pageId":4}}
+DEBUG 2022-11-24 15:12:32,381 connection.py _on_message     252 RECV < {"id":"9b47c07d-c312-4e51-a91f-81f2dfe67f1a","result":{}}
+DEBUG 2022-11-24 15:12:32,383 minitest.py _miniTearDown   513 =========Current case Down: test_04_check_nurse_order_success=========
+INFO  2022-11-24 15:12:32,386 basenative.py wrapper         23  call BaseNative.get_start_up
+INFO  2022-11-24 15:12:32,388 basenative.py wrapper         27  call BaseNative.get_start_up end
+ERROR 2022-11-24 15:12:32,421 assertbase.py _teardown_collect 273 <bound method NurseOrderTest.test_04_check_nurse_order_success of <test.nurseorder_test.NurseOrderTest testMethod=test_04_check_nurse_order_success>>
+Traceback (most recent call last):
+  File "c:\users\admin\appdata\local\programs\python\python38\lib\site-packages\minium\framework\libs\unittest\case.py", line 32, in testPartExecutor
+    yield
+  File "c:\users\admin\appdata\local\programs\python\python38\lib\site-packages\minium\framework\libs\unittest\case.py", line 118, in run
+    self._callTestMethod(testMethod)
+  File "c:\users\admin\appdata\local\programs\python\python38\lib\unittest\case.py", line 633, in _callTestMethod
+    method()
+  File "D:\E护通\自动化\miniapp_auto\test\nurseorder_test.py", line 25, in test_04_check_nurse_order_success
+    self.nurseOrderFlow.check_order_success('普通换药')
+  File "D:\E护通\自动化\miniapp_auto\case\flows\nurseorderflow.py", line 18, in check_order_success
+    SearchFlow.search_flow(self, text)
+  File "D:\E护通\自动化\miniapp_auto\case\flows\searchflow.py", line 17, in search_flow
+    self.input_search(text)
+AttributeError: 'NurseOrderFlow' object has no attribute 'input_search'

@@ -1,0 +1,52 @@
+INFO  2022-11-18 17:04:18,016 minitest.py _miniSetUp      279 =========Current case: test_02_page_base_element=========
+INFO  2022-11-18 17:04:18,016 minitest.py _miniSetUp      280 package info: D:.E护通.自动化.miniapp_auto.case.homepage_test, case info: HomePageTest.test_02_page_base_element
+INFO  2022-11-18 17:04:18,017 basenative.py wrapper         23  call BaseNative.back_to_miniprogram
+INFO  2022-11-18 17:04:18,017 basenative.py back_to_miniprogram 528 try back_to_miniprogram 3
+INFO  2022-11-18 17:04:18,017 basenative.py wrapper         27  call BaseNative.back_to_miniprogram end
+INFO  2022-11-18 17:04:18,018 app.py     relaunch        387 ReLaunch: /pages/user/userindex
+DEBUG 2022-11-18 17:04:18,018 connection.py send_async      211 ASYNC_SEND > {"id": "95d8742f-eadf-4960-8ebc-dce2faff8cb7", "method": "App.callWxMethod", "params": {"method": "reLaunch", "args": [{"url": "/pages/user/userindex"}]}}
+DEBUG 2022-11-18 17:04:18,095 connection.py _on_message     252 RECV < {"id":"95d8742f-eadf-4960-8ebc-dce2faff8cb7","result":{"result":{"errMsg":"reLaunch:ok"}}}
+INFO  2022-11-18 17:04:18,096 connection.py _on_message     273 received async msg: 95d8742f-eadf-4960-8ebc-dce2faff8cb7
+DEBUG 2022-11-18 17:04:18,475 connection.py _on_message     252 RECV < {"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"webviewId":5,"path":"pages/user/userindex","query":{},"openType":"reLaunch","__ts__":1668762258466},1668762258469]}}
+INFO  2022-11-18 17:04:18,478 app.py     _on_route_changed 588 Route changed, {'name': 'onAppRouteDone', 'args': [{'webviewId': 5, 'path': 'pages/user/userindex', 'query': {}, 'openType': 'reLaunch', '__ts__': 1668762258466}, 1668762258469]}
+INFO  2022-11-18 17:04:18,482 minitest.py capture         575 capture setup.png
+INFO  2022-11-18 17:04:18,483 basenative.py wrapper         23  call IdeNative.screen_shot
+DEBUG 2022-11-18 17:04:18,484 connection.py send            201 SEND > {"id":"83d2cfcb-83fa-4bf6-aeb5-30abfee093f0","method":"App.captureScreenshot","params":{}}
+INFO  2022-11-18 17:05:18,684 minitest.py capture         575 capture setup.png
+INFO  2022-11-18 17:05:18,685 basenative.py wrapper         23  call IdeNative.screen_shot
+DEBUG 2022-11-18 17:05:18,685 connection.py send            201 SEND > {"id":"5a875e77-7dae-4c94-897e-0ee9b905b810","method":"App.captureScreenshot","params":{}}
+DEBUG 2022-11-18 17:06:18,866 minitest.py _miniTearDown   513 =========Current case Down: test_02_page_base_element=========
+INFO  2022-11-18 17:06:18,869 minitest.py capture         575 capture teardown.png
+INFO  2022-11-18 17:06:18,869 basenative.py wrapper         23  call IdeNative.screen_shot
+DEBUG 2022-11-18 17:06:18,869 connection.py send            201 SEND > {"id":"8cf5baa1-b41e-4b47-814c-bc532f770248","method":"App.captureScreenshot","params":{}}
+DEBUG 2022-11-18 17:06:50,744 connection.py _on_message     250 RECV < {"id":"8cf5baa1-b41e-4b47-814c-bc532f770248","result":{"data":"iVBORw0KGgoAAAANSUhEUgAAAYYAAAL6CAIAAAC96maVAAAAAXNSR0IArs4c6QAAIABJREFUeJzsvemTZcd1J/Y7ebe3195dvRW60YUGGgQBERJJcChpRhqSGmkkyotMzYSpTw477PA3/yn+Mh8VMcMIjakYx1gcexxBahQjmyZIShQhQmgCaKIbjUZ3bV2v3qu33HeXPP5w9+1tVQ0CZB4S2bfey3vOyZOZ55z8Zd77qPZHXwEAgABmEFWUAAd1wATKXhdK5ko+EbeAAj7RNVNaTqacj0pvnZdB4bZqExQp/XFgmeDfcvuAy9WcYrEKRSirRuaTOVmcg3HL2J2pL4rCq9uStvpSrMsVLRo6KtNiC/2euZ6jZ6eMjepxkpk1FTPo3Pp9mpGS5uU1Wrjj4xoiLTRoCCi5jq2f4kopORRbIfJQAJgIjMQUACjqS6...
+INFO  2022-11-18 17:06:50,746 minitest.py capture         575 capture teardown.png
+INFO  2022-11-18 17:06:50,747 basenative.py wrapper         23  call IdeNative.screen_shot
+DEBUG 2022-11-18 17:06:50,747 connection.py send            201 SEND > {"id":"800d72f0-f9de-4673-8d07-c126194cbb36","method":"App.captureScreenshot","params":{}}
+DEBUG 2022-11-18 17:06:50,942 connection.py _on_message     250 RECV < {"id":"800d72f0-f9de-4673-8d07-c126194cbb36","result":{"data":"iVBORw0KGgoAAAANSUhEUgAAAYYAAAL6CAIAAAC96maVAAAAAXNSR0IArs4c6QAAIABJREFUeJzsvemTZcd1J/Y7ebe3195dvRW60YUGGgQBERJJcChpRhqSGmkkyotMzYSpTw477PA3/yn+Mh8VMcMIjakYx1gcexxBahQjmyZIShQhQmgCaKIbjUZ3bV2v3qu33HeXPP5w9+1tVQ0CZB4S2bfey3vOyZOZ55z8Zd77qPZHXwEAgABmEFWUAAd1wATKXhdK5ko+EbeAAj7RNVNaTqacj0pvnZdB4bZqExQp/XFgmeDfcvuAy9WcYrEKRSirRuaTOVmcg3HL2J2pL4rCq9uStvpSrMsVLRo6KtNiC/2euZ6jZ6eMjepxkpk1FTPo3Pp9mpGS5uU1Wrjj4xoiLTRoCCi5jq2f4kopORRbIfJQAJgIjMQUACjqS6...
+INFO  2022-11-18 17:06:50,950 basenative.py wrapper         27  call IdeNative.screen_shot end
+ERROR 2022-11-18 17:06:50,955 assertbase.py _teardown_collect 273 <bound method HomePageTest.test_02_page_base_element of <case.homepage_test.HomePageTest testMethod=test_02_page_base_element>>
+Traceback (most recent call last):
+  File "c:\users\admin\appdata\local\programs\python\python38\lib\site-packages\minium\framework\libs\unittest\case.py", line 37, in testPartExecutor
+    yield
+  File "c:\users\admin\appdata\local\programs\python\python38\lib\site-packages\minium\framework\libs\unittest\case.py", line 114, in run
+    self._miniSetUp()
+  File "c:\users\admin\appdata\local\programs\python\python38\lib\site-packages\minium\framework\minitest.py", line 349, in _miniSetUp
+    retry(2)(self.capture)("setup")
+  File "c:\users\admin\appdata\local\programs\python\python38\lib\site-packages\minium\utils\utils.py", line 70, in wrapper
+    return func(*args, **kwargs)
+  File "c:\users\admin\appdata\local\programs\python\python38\lib\site-packages\minium\framework\minitest.py", line 576, in capture
+    self.native.screen_shot(path)
+  File "c:\users\admin\appdata\local\programs\python\python38\lib\site-packages\minium\native\wx_native\basenative.py", line 24, in wrapper
+    result = func(*args, **kwargs)
+  File "c:\users\admin\appdata\local\programs\python\python38\lib\site-packages\minium\native\wx_native\idenative.py", line 70, in screen_shot
+    self.mini.app.screen_shot(filename, return_format)
+  File "c:\users\admin\appdata\local\programs\python\python38\lib\site-packages\minium\miniprogram\base_driver\minium_log.py", line 131, in wrapper
+    result = func(*args, **kwargs)
+  File "c:\users\admin\appdata\local\programs\python\python38\lib\site-packages\minium\miniprogram\base_driver\app.py", line 179, in screen_shot
+    self.connection.send("App.captureScreenshot")
+  File "c:\users\admin\appdata\local\programs\python\python38\lib\site-packages\minium\miniprogram\base_driver\connection.py", line 203, in send
+    return self._receive_response(cmd)
+  File "c:\users\admin\appdata\local\programs\python\python38\lib\site-packages\minium\miniprogram\base_driver\connection.py", line 230, in _receive_response
+    raise MiniTimeoutError(
+minium.framework.exception.MiniTimeoutError: [call App.captureScreenshot] receive from remote timeout, id: 5a875e77-7dae-4c94-897e-0ee9b905b810

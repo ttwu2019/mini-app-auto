@@ -1,0 +1,16 @@
+INFO  2022-11-22 18:09:46,458 minitest.py _miniSetUp      279 =========Current case: test_01_home_page_path=========
+INFO  2022-11-22 18:09:46,460 minitest.py _miniSetUp      280 package info: D:.E护通.自动化.miniapp_auto.case.homePage_test, case info: HomePageTest.test_01_home_page_path
+INFO  2022-11-22 18:09:46,462 basenative.py wrapper         23  call BaseNative.back_to_miniprogram
+INFO  2022-11-22 18:09:46,463 basenative.py back_to_miniprogram 528 try back_to_miniprogram 3
+INFO  2022-11-22 18:09:46,464 basenative.py wrapper         27  call BaseNative.back_to_miniprogram end
+INFO  2022-11-22 18:09:46,464 app.py     relaunch        387 ReLaunch: /pages/user/userindex
+DEBUG 2022-11-22 18:09:46,465 connection.py send_async      211 ASYNC_SEND > {"id": "909a0335-b744-45a5-88e3-4cccd6276bba", "method": "App.callWxMethod", "params": {"method": "reLaunch", "args": [{"url": "/pages/user/userindex"}]}}
+DEBUG 2022-11-22 18:09:46,565 connection.py _on_message     252 RECV < {"id":"909a0335-b744-45a5-88e3-4cccd6276bba","result":{"result":{"errMsg":"reLaunch:ok"}}}
+INFO  2022-11-22 18:09:46,565 connection.py _on_message     273 received async msg: 909a0335-b744-45a5-88e3-4cccd6276bba
+DEBUG 2022-11-22 18:09:47,125 connection.py _on_message     252 RECV < {"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"webviewId":4,"path":"pages/user/userindex","query":{},"openType":"reLaunch","__ts__":1669111787121},1669111787123]}}
+INFO  2022-11-22 18:09:47,130 app.py     _on_route_changed 588 Route changed, {'name': 'onAppRouteDone', 'args': [{'webviewId': 4, 'path': 'pages/user/userindex', 'query': {}, 'openType': 'reLaunch', '__ts__': 1669111787121}, 1669111787123]}
+DEBUG 2022-11-22 18:09:47,133 connection.py send            201 SEND > {"id":"ec519364-5f50-4e11-aaf4-3c059352a69b","method":"App.getCurrentPage","params":{}}
+DEBUG 2022-11-22 18:09:47,139 connection.py _on_message     252 RECV < {"id":"ec519364-5f50-4e11-aaf4-3c059352a69b","result":{"pageId":4,"path":"pages/user/userindex","query":{}}}
+DEBUG 2022-11-22 18:09:47,353 minitest.py _miniTearDown   513 =========Current case Down: test_01_home_page_path=========
+INFO  2022-11-22 18:09:47,355 basenative.py wrapper         23  call BaseNative.get_start_up
+INFO  2022-11-22 18:09:47,359 basenative.py wrapper         27  call BaseNative.get_start_up end

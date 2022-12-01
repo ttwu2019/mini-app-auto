@@ -1,0 +1,27 @@
+INFO  2022-11-24 15:11:37,270 minitest.py _miniSetUp      279 =========Current case: test_04_check_nurse_order_success=========
+INFO  2022-11-24 15:11:37,270 minitest.py _miniSetUp      280 package info: D:.E护通.自动化.miniapp_auto.test.nurseorder_test, case info: NurseOrderTest.test_04_check_nurse_order_success
+INFO  2022-11-24 15:11:37,271 basenative.py wrapper         23  call BaseNative.back_to_miniprogram
+INFO  2022-11-24 15:11:37,272 basenative.py back_to_miniprogram 528 try back_to_miniprogram 3
+INFO  2022-11-24 15:11:37,273 basenative.py wrapper         27  call BaseNative.back_to_miniprogram end
+INFO  2022-11-24 15:11:37,275 app.py     relaunch        387 ReLaunch: /pages/user/userindex
+DEBUG 2022-11-24 15:11:37,277 connection.py send_async      211 ASYNC_SEND > {"id": "eab143a7-6d57-4768-aeb1-cdc74c2352b9", "method": "App.callWxMethod", "params": {"method": "reLaunch", "args": [{"url": "/pages/user/userindex"}]}}
+DEBUG 2022-11-24 15:11:37,413 connection.py _on_message     252 RECV < {"id":"eab143a7-6d57-4768-aeb1-cdc74c2352b9","result":{"result":{"errMsg":"reLaunch:ok"}}}
+INFO  2022-11-24 15:11:37,416 connection.py _on_message     273 received async msg: eab143a7-6d57-4768-aeb1-cdc74c2352b9
+DEBUG 2022-11-24 15:11:37,993 connection.py _on_message     252 RECV < {"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"webviewId":4,"path":"pages/user/userindex","query":{},"openType":"reLaunch","__ts__":1669273897991},1669273897992]}}
+INFO  2022-11-24 15:11:37,995 app.py     _on_route_changed 588 Route changed, {'name': 'onAppRouteDone', 'args': [{'webviewId': 4, 'path': 'pages/user/userindex', 'query': {}, 'openType': 'reLaunch', '__ts__': 1669273897991}, 1669273897992]}
+DEBUG 2022-11-24 15:11:37,997 minitest.py _miniTearDown   513 =========Current case Down: test_04_check_nurse_order_success=========
+INFO  2022-11-24 15:11:37,998 basenative.py wrapper         23  call BaseNative.get_start_up
+INFO  2022-11-24 15:11:37,999 basenative.py wrapper         27  call BaseNative.get_start_up end
+ERROR 2022-11-24 15:11:38,044 assertbase.py _teardown_collect 273 <bound method NurseOrderTest.test_04_check_nurse_order_success of <test.nurseorder_test.NurseOrderTest testMethod=test_04_check_nurse_order_success>>
+Traceback (most recent call last):
+  File "c:\users\admin\appdata\local\programs\python\python38\lib\site-packages\minium\framework\libs\unittest\case.py", line 32, in testPartExecutor
+    yield
+  File "c:\users\admin\appdata\local\programs\python\python38\lib\site-packages\minium\framework\libs\unittest\case.py", line 118, in run
+    self._callTestMethod(testMethod)
+  File "c:\users\admin\appdata\local\programs\python\python38\lib\unittest\case.py", line 633, in _callTestMethod
+    method()
+  File "D:\E护通\自动化\miniapp_auto\test\nurseorder_test.py", line 25, in test_04_check_nurse_order_success
+    self.nurseOrderFlow.check_order_success('普通换药')
+  File "D:\E护通\自动化\miniapp_auto\case\flows\nurseorderflow.py", line 18, in check_order_success
+    SearchFlow.search_flow()
+TypeError: search_flow() missing 2 required positional arguments: 'self' and 'text'

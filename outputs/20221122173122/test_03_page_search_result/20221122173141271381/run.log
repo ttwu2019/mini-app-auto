@@ -1,0 +1,51 @@
+INFO  2022-11-22 17:31:41,276 minitest.py _miniSetUp      279 =========Current case: test_03_page_search_result=========
+INFO  2022-11-22 17:31:41,278 minitest.py _miniSetUp      280 package info: D:.E护通.自动化.miniapp_auto.case.searchPage_test, case info: SearchPageTest.test_03_page_search_result
+INFO  2022-11-22 17:31:41,279 basenative.py wrapper         23  call BaseNative.back_to_miniprogram
+INFO  2022-11-22 17:31:41,279 basenative.py back_to_miniprogram 528 try back_to_miniprogram 3
+INFO  2022-11-22 17:31:41,280 basenative.py wrapper         27  call BaseNative.back_to_miniprogram end
+INFO  2022-11-22 17:31:41,280 app.py     relaunch        387 ReLaunch: /pages/user/userindex
+DEBUG 2022-11-22 17:31:41,281 connection.py send_async      211 ASYNC_SEND > {"id": "07800455-999b-4fdc-a7da-482c05f2b868", "method": "App.callWxMethod", "params": {"method": "reLaunch", "args": [{"url": "/pages/user/userindex"}]}}
+DEBUG 2022-11-22 17:31:41,329 connection.py _on_message     252 RECV < {"id":"07800455-999b-4fdc-a7da-482c05f2b868","result":{"result":{"errMsg":"reLaunch:ok"}}}
+INFO  2022-11-22 17:31:41,329 connection.py _on_message     273 received async msg: 07800455-999b-4fdc-a7da-482c05f2b868
+DEBUG 2022-11-22 17:31:41,788 connection.py _on_message     252 RECV < {"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"webviewId":7,"path":"pages/user/userindex","query":{},"openType":"reLaunch","__ts__":1669109501787},1669109501788]}}
+INFO  2022-11-22 17:31:41,792 app.py     _on_route_changed 588 Route changed, {'name': 'onAppRouteDone', 'args': [{'webviewId': 7, 'path': 'pages/user/userindex', 'query': {}, 'openType': 'reLaunch', '__ts__': 1669109501787}, 1669109501788]}
+DEBUG 2022-11-22 17:31:46,795 connection.py send            201 SEND > {"id":"f2d66235-5ad3-4f73-ad62-f891d69f6a89","method":"App.getCurrentPage","params":{}}
+DEBUG 2022-11-22 17:31:46,810 connection.py _on_message     252 RECV < {"id":"f2d66235-5ad3-4f73-ad62-f891d69f6a89","result":{"pageId":7,"path":"pages/user/userindex","query":{}}}
+INFO  2022-11-22 17:31:46,811 page.py    _get_elements_by_css 527 try to get elements: view[class="uh-bottom data-v-ec48ec48"]
+DEBUG 2022-11-22 17:31:46,812 connection.py send            201 SEND > {"id":"3366d04c-1065-4dc0-8e29-1868297a8eef","method":"Page.getElements","params":{"selector":"view[class=\"uh-bottom data-v-ec48ec48\"]","pageId":7}}
+DEBUG 2022-11-22 17:31:46,817 connection.py _on_message     252 RECV < {"id":"3366d04c-1065-4dc0-8e29-1868297a8eef","result":{"elements":[{"elementId":"c1e09e10-dc70-498e-95ce-88c4777cbf36","tagName":"view"}]}}
+INFO  2022-11-22 17:31:46,818 page.py    _get_elements_by_css 534 find elements success: [<minium.miniprogram.base_driver.element.BaseElement object at 0x0000024265668F70>]
+DEBUG 2022-11-22 17:31:46,819 connection.py send            201 SEND > {"id":"3f9225aa-1088-404c-86b5-2263de29da88","method":"Element.tap","params":{"elementId":"c1e09e10-dc70-498e-95ce-88c4777cbf36","pageId":7}}
+DEBUG 2022-11-22 17:31:46,888 connection.py _on_message     252 RECV < {"id":"3f9225aa-1088-404c-86b5-2263de29da88","result":{}}
+DEBUG 2022-11-22 17:31:46,891 connection.py send            201 SEND > {"id":"b31f2ce5-d951-4984-b5f4-9a758d4fdec5","method":"App.getCurrentPage","params":{}}
+DEBUG 2022-11-22 17:31:46,926 connection.py _on_message     252 RECV < {"id":"b31f2ce5-d951-4984-b5f4-9a758d4fdec5","result":{"pageId":7,"path":"pages/user/userindex","query":{}}}
+INFO  2022-11-22 17:31:46,929 page.py    _get_elements_by_css 527 try to get elements: .input
+DEBUG 2022-11-22 17:31:46,932 connection.py send            201 SEND > {"id":"d57ffa32-e2da-4742-b8d8-dcb820109e78","method":"Page.getElements","params":{"selector":".input","pageId":7}}
+DEBUG 2022-11-22 17:31:46,984 connection.py _on_message     252 RECV < {"id":"d57ffa32-e2da-4742-b8d8-dcb820109e78","result":{"elements":[]}}
+WARNI 2022-11-22 17:31:46,985 page.py    _get_elements_by_css 532 Could not found any element '.input' you need
+DEBUG 2022-11-22 17:31:46,987 minitest.py _miniTearDown   513 =========Current case Down: test_03_page_search_result=========
+INFO  2022-11-22 17:31:46,988 basenative.py wrapper         23  call BaseNative.get_start_up
+INFO  2022-11-22 17:31:46,989 basenative.py wrapper         27  call BaseNative.get_start_up end
+DEBUG 2022-11-22 17:31:46,991 connection.py send            201 SEND > {"id":"ee5a8726-6bfa-46fe-b311-20a2120ca813","method":"App.getCurrentPage","params":{}}
+DEBUG 2022-11-22 17:31:46,998 connection.py _on_message     252 RECV < {"id":"ee5a8726-6bfa-46fe-b311-20a2120ca813","result":{"pageId":7,"path":"pages/user/userindex","query":{}}}
+DEBUG 2022-11-22 17:31:47,000 connection.py send            201 SEND > {"id":"54c3b6b3-aee4-4820-ad02-258cb1b87258","method":"Page.getElementByXpath","params":{"selector":"/*","pageId":7}}
+DEBUG 2022-11-22 17:31:47,018 connection.py _on_message     252 RECV < {"id":"54c3b6b3-aee4-4820-ad02-258cb1b87258","result":{"elementId":"e837bb7b-0032-41a6-89e5-ad8935a88cc9","tagName":"view"}}
+DEBUG 2022-11-22 17:31:47,019 connection.py send            201 SEND > {"id":"d61f378a-1455-4e84-b7cd-8c95441d3fef","method":"Element.getWXML","params":{"type":"outer","elementId":"e837bb7b-0032-41a6-89e5-ad8935a88cc9","pageId":7}}
+DEBUG 2022-11-22 17:31:47,079 connection.py _on_message     250 RECV < {"id":"d61f378a-1455-4e84-b7cd-8c95441d3fef","result":{"wxml":"<view class=\"userindex data-v-ec48ec48 hid\" style=\"background:#F5F7FA;\"><common-header is=\"components/common-header\" class=\"data-v-ec48ec48\"><view><view class=\"header_view header--header_view green header--green\" style=\"height:100px;\"><view class=\"header_title header--header_title\" style=\"margin-top:54.5px;\"><view class=\"headtext header--headtext\">e护通</view></view></view><view style=\"height:100px;\"></view></view></common-h...
+ERROR 2022-11-22 17:31:47,087 assertbase.py _teardown_collect 273 <bound method SearchPageTest.test_03_page_search_result of <case.searchPage_test.SearchPageTest testMethod=test_03_page_search_result>>
+Traceback (most recent call last):
+  File "c:\users\admin\appdata\local\programs\python\python38\lib\site-packages\minium\framework\libs\unittest\case.py", line 32, in testPartExecutor
+    yield
+  File "c:\users\admin\appdata\local\programs\python\python38\lib\site-packages\minium\framework\libs\unittest\case.py", line 118, in run
+    self._callTestMethod(testMethod)
+  File "c:\users\admin\appdata\local\programs\python\python38\lib\unittest\case.py", line 633, in _callTestMethod
+    method()
+  File "D:\E护通\自动化\miniapp_auto\case\searchPage_test.py", line 23, in test_03_page_search_result
+    self.searchPage.check_search_results('院外居家服务')
+  File "D:\E护通\自动化\miniapp_auto\case\pages\searchpage.py", line 27, in check_search_results
+    search_click = self.mini.page.get_element(SearchPage.locators['SEARCH_INPUT_CLICK'])
+  File "c:\users\admin\appdata\local\programs\python\python38\lib\site-packages\minium\miniprogram\base_driver\minium_log.py", line 131, in wrapper
+    result = func(*args, **kwargs)
+  File "c:\users\admin\appdata\local\programs\python\python38\lib\site-packages\minium\miniprogram\base_driver\page.py", line 256, in get_element
+    raise MiniElementNotFoundError("element[%s] not found" % selector)
+minium.framework.exception.MiniElementNotFoundError: element[.input] not found

@@ -1,0 +1,73 @@
+INFO  2022-11-22 16:22:36,827 minitest.py _miniSetUp      279 =========Current case: test_03_page_search_result=========
+INFO  2022-11-22 16:22:36,828 minitest.py _miniSetUp      280 package info: D:.E护通.自动化.miniapp_auto.case.homepage_test, case info: HomePageTest.test_03_page_search_result
+INFO  2022-11-22 16:22:36,828 basenative.py wrapper         23  call BaseNative.back_to_miniprogram
+INFO  2022-11-22 16:22:36,828 basenative.py back_to_miniprogram 528 try back_to_miniprogram 3
+INFO  2022-11-22 16:22:36,828 basenative.py wrapper         27  call BaseNative.back_to_miniprogram end
+INFO  2022-11-22 16:22:36,829 app.py     relaunch        387 ReLaunch: /pages/user/userindex
+DEBUG 2022-11-22 16:22:36,829 connection.py send_async      211 ASYNC_SEND > {"id": "b159b8a2-f890-4c52-ae29-2acdc862b4e9", "method": "App.callWxMethod", "params": {"method": "reLaunch", "args": [{"url": "/pages/user/userindex"}]}}
+DEBUG 2022-11-22 16:22:36,884 connection.py _on_message     252 RECV < {"id":"b159b8a2-f890-4c52-ae29-2acdc862b4e9","result":{"result":{"errMsg":"reLaunch:ok"}}}
+DEBUG 2022-11-22 16:22:36,884 connection.py _on_message     252 RECV < {"id":"b159b8a2-f890-4c52-ae29-2acdc862b4e9","result":{"result":{"errMsg":"reLaunch:ok"}}}
+INFO  2022-11-22 16:22:36,885 connection.py _on_message     273 received async msg: b159b8a2-f890-4c52-ae29-2acdc862b4e9
+INFO  2022-11-22 16:22:36,886 connection.py _on_message     273 received async msg: b159b8a2-f890-4c52-ae29-2acdc862b4e9
+DEBUG 2022-11-22 16:22:37,139 connection.py _on_message     252 RECV < {"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"webviewId":6,"path":"pages/user/userindex","query":{},"openType":"reLaunch","__ts__":1669105357137},1669105357138]}}
+DEBUG 2022-11-22 16:22:37,140 connection.py _on_message     252 RECV < {"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"webviewId":6,"path":"pages/user/userindex","query":{},"openType":"reLaunch","__ts__":1669105357137},1669105357138]}}
+INFO  2022-11-22 16:22:37,143 app.py     _on_route_changed 588 Route changed, {'name': 'onAppRouteDone', 'args': [{'webviewId': 6, 'path': 'pages/user/userindex', 'query': {}, 'openType': 'reLaunch', '__ts__': 1669105357137}, 1669105357138]}
+DEBUG 2022-11-22 16:22:47,145 connection.py send            201 SEND > {"id":"a6887521-da33-4d98-938c-5775a12d79af","method":"App.getCurrentPage","params":{}}
+DEBUG 2022-11-22 16:22:47,147 connection.py _on_message     252 RECV < {"id":"a6887521-da33-4d98-938c-5775a12d79af","result":{"pageId":6,"path":"pages/user/userindex","query":{}}}
+DEBUG 2022-11-22 16:22:47,147 connection.py _on_message     252 RECV < {"id":"a6887521-da33-4d98-938c-5775a12d79af","result":{"pageId":6,"path":"pages/user/userindex","query":{}}}
+INFO  2022-11-22 16:22:47,147 page.py    _get_elements_by_css 527 try to get elements: view[class="uh-bottom data-v-ec48ec48"]
+INFO  2022-11-22 16:22:47,148 connection.py _on_message     273 received async msg: a6887521-da33-4d98-938c-5775a12d79af
+DEBUG 2022-11-22 16:22:47,148 connection.py send            201 SEND > {"id":"fe17c4d6-d2f5-441e-9ccc-b3b27932961d","method":"Page.getElements","params":{"selector":"view[class=\"uh-bottom data-v-ec48ec48\"]","pageId":6}}
+DEBUG 2022-11-22 16:22:47,152 connection.py _on_message     252 RECV < {"id":"fe17c4d6-d2f5-441e-9ccc-b3b27932961d","result":{"elements":[{"elementId":"b7cfd63e-a3f0-4799-88d4-b869412a0cad","tagName":"view"}]}}
+DEBUG 2022-11-22 16:22:47,153 connection.py _on_message     252 RECV < {"id":"fe17c4d6-d2f5-441e-9ccc-b3b27932961d","result":{"elements":[{"elementId":"b7cfd63e-a3f0-4799-88d4-b869412a0cad","tagName":"view"}]}}
+INFO  2022-11-22 16:22:47,154 page.py    _get_elements_by_css 534 find elements success: [<minium.miniprogram.base_driver.element.BaseElement object at 0x0000018E21C433D0>]
+INFO  2022-11-22 16:22:47,154 connection.py _on_message     273 received async msg: fe17c4d6-d2f5-441e-9ccc-b3b27932961d
+DEBUG 2022-11-22 16:22:47,154 connection.py send            201 SEND > {"id":"00d4afb5-d79f-49aa-a5d1-ad404c5c202f","method":"Element.tap","params":{"elementId":"b7cfd63e-a3f0-4799-88d4-b869412a0cad","pageId":6}}
+DEBUG 2022-11-22 16:22:47,232 connection.py _on_message     252 RECV < {"id":"00d4afb5-d79f-49aa-a5d1-ad404c5c202f","result":{}}
+DEBUG 2022-11-22 16:22:47,233 connection.py _on_message     252 RECV < {"id":"00d4afb5-d79f-49aa-a5d1-ad404c5c202f","result":{}}
+INFO  2022-11-22 16:22:47,234 connection.py _on_message     273 received async msg: 00d4afb5-d79f-49aa-a5d1-ad404c5c202f
+DEBUG 2022-11-22 16:22:49,227 connection.py _on_message     252 RECV < {"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"webviewId":7,"path":"pageuser/searchpage","query":{"pointsSource":"1"},"openType":"navigateTo","__ts__":1669105369167},1669105369171]}}
+DEBUG 2022-11-22 16:22:49,227 connection.py _on_message     252 RECV < {"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"webviewId":7,"path":"pageuser/searchpage","query":{"pointsSource":"1"},"openType":"navigateTo","__ts__":1669105369167},1669105369171]}}
+INFO  2022-11-22 16:22:49,229 app.py     _on_route_changed 588 Route changed, {'name': 'onAppRouteDone', 'args': [{'webviewId': 7, 'path': 'pageuser/searchpage', 'query': {'pointsSource': '1'}, 'openType': 'navigateTo', '__ts__': 1669105369167}, 1669105369171]}
+DEBUG 2022-11-22 16:22:57,233 connection.py send            201 SEND > {"id":"efd65893-302d-48b6-84bd-05a50d21a3dc","method":"App.getCurrentPage","params":{}}
+DEBUG 2022-11-22 16:22:57,235 connection.py _on_message     252 RECV < {"id":"efd65893-302d-48b6-84bd-05a50d21a3dc","result":{"pageId":7,"path":"pageuser/searchpage","query":{"pointsSource":"1"}}}
+DEBUG 2022-11-22 16:22:57,235 connection.py _on_message     252 RECV < {"id":"efd65893-302d-48b6-84bd-05a50d21a3dc","result":{"pageId":7,"path":"pageuser/searchpage","query":{"pointsSource":"1"}}}
+INFO  2022-11-22 16:22:57,235 connection.py _on_message     273 received async msg: efd65893-302d-48b6-84bd-05a50d21a3dc
+INFO  2022-11-22 16:22:57,236 page.py    _get_elements_by_css 527 try to get elements: view[class="content data-v-20ed4784"]
+DEBUG 2022-11-22 16:22:57,237 connection.py send            201 SEND > {"id":"327ad1b1-beec-4b6c-a305-5d8dd8274475","method":"Page.getElements","params":{"selector":"view[class=\"content data-v-20ed4784\"]","pageId":7}}
+DEBUG 2022-11-22 16:22:57,241 connection.py _on_message     252 RECV < {"id":"327ad1b1-beec-4b6c-a305-5d8dd8274475","result":{"elements":[]}}
+DEBUG 2022-11-22 16:22:57,241 connection.py _on_message     252 RECV < {"id":"327ad1b1-beec-4b6c-a305-5d8dd8274475","result":{"elements":[]}}
+WARNI 2022-11-22 16:22:57,242 page.py    _get_elements_by_css 532 Could not found any element 'view[class="content data-v-20ed4784"]' you need
+INFO  2022-11-22 16:22:57,242 connection.py _on_message     273 received async msg: 327ad1b1-beec-4b6c-a305-5d8dd8274475
+DEBUG 2022-11-22 16:22:57,242 minitest.py _miniTearDown   513 =========Current case Down: test_03_page_search_result=========
+INFO  2022-11-22 16:22:57,243 basenative.py wrapper         23  call BaseNative.get_start_up
+INFO  2022-11-22 16:22:57,243 basenative.py wrapper         27  call BaseNative.get_start_up end
+DEBUG 2022-11-22 16:22:57,244 connection.py send            201 SEND > {"id":"fb46b1b1-22ea-4071-a088-9e214fc9d35a","method":"App.getCurrentPage","params":{}}
+DEBUG 2022-11-22 16:22:57,246 connection.py _on_message     252 RECV < {"id":"fb46b1b1-22ea-4071-a088-9e214fc9d35a","result":{"pageId":7,"path":"pageuser/searchpage","query":{"pointsSource":"1"}}}
+DEBUG 2022-11-22 16:22:57,247 connection.py _on_message     252 RECV < {"id":"fb46b1b1-22ea-4071-a088-9e214fc9d35a","result":{"pageId":7,"path":"pageuser/searchpage","query":{"pointsSource":"1"}}}
+INFO  2022-11-22 16:22:57,247 connection.py _on_message     273 received async msg: fb46b1b1-22ea-4071-a088-9e214fc9d35a
+DEBUG 2022-11-22 16:22:57,247 connection.py send            201 SEND > {"id":"05f7bca9-4251-49af-b3f5-830232eaf37f","method":"Page.getElementByXpath","params":{"selector":"/*","pageId":7}}
+DEBUG 2022-11-22 16:22:57,251 connection.py _on_message     252 RECV < {"id":"05f7bca9-4251-49af-b3f5-830232eaf37f","result":{"elementId":"de782abd-8ea9-4849-b5c9-020be13465ba","tagName":"view"}}
+DEBUG 2022-11-22 16:22:57,252 connection.py _on_message     252 RECV < {"id":"05f7bca9-4251-49af-b3f5-830232eaf37f","result":{"elementId":"de782abd-8ea9-4849-b5c9-020be13465ba","tagName":"view"}}
+INFO  2022-11-22 16:22:57,252 connection.py _on_message     273 received async msg: 05f7bca9-4251-49af-b3f5-830232eaf37f
+DEBUG 2022-11-22 16:22:57,252 connection.py send            201 SEND > {"id":"e399df5c-d55e-4536-b0c5-4f8d97b841d1","method":"Element.getWXML","params":{"type":"outer","elementId":"de782abd-8ea9-4849-b5c9-020be13465ba","pageId":7}}
+DEBUG 2022-11-22 16:22:57,269 connection.py _on_message     250 RECV < {"id":"e399df5c-d55e-4536-b0c5-4f8d97b841d1","result":{"wxml":"<view class=\"searchpage data-v-2ff0166e\" data-event-opts=\"tap,e0,$event\"><view class=\"searchdiv data-v-2ff0166e\"><view class=\"addshoplist-head data-v-2ff0166e\"><view class=\"searchbox data-v-2ff0166e\"><m-search is=\"components/mehaotian-search/mehaotian-search2\" class=\"data-v-2ff0166e vue-ref\" data-event-opts=\"^search,search,$event\" data-ref=\"mSearch\" style=\"background:none;\"><view class=\"search search2--search data-v-20ed4...
+DEBUG 2022-11-22 16:22:57,273 connection.py _on_message     250 RECV < {"id":"e399df5c-d55e-4536-b0c5-4f8d97b841d1","result":{"wxml":"<view class=\"searchpage data-v-2ff0166e\" data-event-opts=\"tap,e0,$event\"><view class=\"searchdiv data-v-2ff0166e\"><view class=\"addshoplist-head data-v-2ff0166e\"><view class=\"searchbox data-v-2ff0166e\"><m-search is=\"components/mehaotian-search/mehaotian-search2\" class=\"data-v-2ff0166e vue-ref\" data-event-opts=\"^search,search,$event\" data-ref=\"mSearch\" style=\"background:none;\"><view class=\"search search2--search data-v-20ed4...
+INFO  2022-11-22 16:22:57,274 connection.py _on_message     273 received async msg: e399df5c-d55e-4536-b0c5-4f8d97b841d1
+ERROR 2022-11-22 16:22:57,277 assertbase.py _teardown_collect 273 <bound method HomePageTest.test_03_page_search_result of <case.homepage_test.HomePageTest testMethod=test_03_page_search_result>>
+Traceback (most recent call last):
+  File "c:\users\admin\appdata\local\programs\python\python38\lib\site-packages\minium\framework\libs\unittest\case.py", line 32, in testPartExecutor
+    yield
+  File "c:\users\admin\appdata\local\programs\python\python38\lib\site-packages\minium\framework\libs\unittest\case.py", line 118, in run
+    self._callTestMethod(testMethod)
+  File "c:\users\admin\appdata\local\programs\python\python38\lib\unittest\case.py", line 633, in _callTestMethod
+    method()
+  File "D:\E护通\自动化\miniapp_auto\case\homepage_test.py", line 39, in test_03_page_search_result
+    self.searchpage.check_search_results()
+  File "D:\E护通\自动化\miniapp_auto\case\pages\searchpage.py", line 27, in check_search_results
+    search_input = self.mini.page.get_element(SearchPage.locators['SEARCH_INPUT'])
+  File "c:\users\admin\appdata\local\programs\python\python38\lib\site-packages\minium\miniprogram\base_driver\minium_log.py", line 131, in wrapper
+    result = func(*args, **kwargs)
+  File "c:\users\admin\appdata\local\programs\python\python38\lib\site-packages\minium\miniprogram\base_driver\page.py", line 256, in get_element
+    raise MiniElementNotFoundError("element[%s] not found" % selector)
+minium.framework.exception.MiniElementNotFoundError: element[view[class="content data-v-20ed4784"]] not found

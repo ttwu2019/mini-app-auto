@@ -1,0 +1,27 @@
+INFO  2022-11-23 10:05:21,181 minitest.py _miniSetUp      279 =========Current case: test_02_page_search_result=========
+INFO  2022-11-23 10:05:21,182 minitest.py _miniSetUp      280 package info: D:.E护通.自动化.miniapp_auto.case.searchPage_test, case info: SearchPageTest.test_02_page_search_result
+INFO  2022-11-23 10:05:21,182 basenative.py wrapper         23  call BaseNative.back_to_miniprogram
+INFO  2022-11-23 10:05:21,183 basenative.py back_to_miniprogram 528 try back_to_miniprogram 3
+INFO  2022-11-23 10:05:21,184 basenative.py wrapper         27  call BaseNative.back_to_miniprogram end
+INFO  2022-11-23 10:05:21,186 app.py     relaunch        387 ReLaunch: /pages/user/userindex
+DEBUG 2022-11-23 10:05:21,188 connection.py send_async      211 ASYNC_SEND > {"id": "94d02421-5706-42ea-847b-3b57b18f5e8f", "method": "App.callWxMethod", "params": {"method": "reLaunch", "args": [{"url": "/pages/user/userindex"}]}}
+DEBUG 2022-11-23 10:05:21,277 connection.py _on_message     252 RECV < {"id":"94d02421-5706-42ea-847b-3b57b18f5e8f","result":{"result":{"errMsg":"reLaunch:ok"}}}
+INFO  2022-11-23 10:05:21,279 connection.py _on_message     273 received async msg: 94d02421-5706-42ea-847b-3b57b18f5e8f
+DEBUG 2022-11-23 10:05:21,771 connection.py _on_message     252 RECV < {"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"webviewId":6,"path":"pages/user/userindex","query":{},"openType":"reLaunch","__ts__":1669169121769},1669169121770]}}
+INFO  2022-11-23 10:05:21,772 app.py     _on_route_changed 588 Route changed, {'name': 'onAppRouteDone', 'args': [{'webviewId': 6, 'path': 'pages/user/userindex', 'query': {}, 'openType': 'reLaunch', '__ts__': 1669169121769}, 1669169121770]}
+DEBUG 2022-11-23 10:05:21,775 minitest.py _miniTearDown   513 =========Current case Down: test_02_page_search_result=========
+INFO  2022-11-23 10:05:21,778 basenative.py wrapper         23  call BaseNative.get_start_up
+INFO  2022-11-23 10:05:21,779 basenative.py wrapper         27  call BaseNative.get_start_up end
+ERROR 2022-11-23 10:05:21,781 assertbase.py _teardown_collect 273 <bound method SearchPageTest.test_02_page_search_result of <case.searchPage_test.SearchPageTest testMethod=test_02_page_search_result>>
+Traceback (most recent call last):
+  File "c:\users\admin\appdata\local\programs\python\python38\lib\site-packages\minium\framework\libs\unittest\case.py", line 32, in testPartExecutor
+    yield
+  File "c:\users\admin\appdata\local\programs\python\python38\lib\site-packages\minium\framework\libs\unittest\case.py", line 118, in run
+    self._callTestMethod(testMethod)
+  File "c:\users\admin\appdata\local\programs\python\python38\lib\unittest\case.py", line 633, in _callTestMethod
+    method()
+  File "D:\E护通\自动化\miniapp_auto\case\searchPage_test.py", line 23, in test_02_page_search_result
+    self.SearchFlow.check_search_results('院外居家服务')
+  File "c:\users\admin\appdata\local\programs\python\python38\lib\site-packages\minium\framework\assertbase.py", line 340, in __getattribute__
+    attr = super().__getattribute__(item)
+AttributeError: 'SearchPageTest' object has no attribute 'SearchFlow'

@@ -1,0 +1,48 @@
+INFO  2022-11-22 17:24:01,040 minitest.py _miniSetUp      279 =========Current case: test_03_page_search_result=========
+INFO  2022-11-22 17:24:01,042 minitest.py _miniSetUp      280 package info: D:.E护通.自动化.miniapp_auto.case.homepage_test, case info: HomePageTest.test_03_page_search_result
+INFO  2022-11-22 17:24:01,042 basenative.py wrapper         23  call BaseNative.back_to_miniprogram
+INFO  2022-11-22 17:24:01,043 basenative.py back_to_miniprogram 528 try back_to_miniprogram 3
+INFO  2022-11-22 17:24:01,043 basenative.py wrapper         27  call BaseNative.back_to_miniprogram end
+INFO  2022-11-22 17:24:01,043 app.py     relaunch        387 ReLaunch: /pages/user/userindex
+DEBUG 2022-11-22 17:24:01,044 connection.py send_async      211 ASYNC_SEND > {"id": "ddbc2e78-478f-4e63-bc51-2d57dbab44b8", "method": "App.callWxMethod", "params": {"method": "reLaunch", "args": [{"url": "/pages/user/userindex"}]}}
+DEBUG 2022-11-22 17:24:01,093 connection.py _on_message     252 RECV < {"id":"ddbc2e78-478f-4e63-bc51-2d57dbab44b8","result":{"result":{"errMsg":"reLaunch:ok"}}}
+INFO  2022-11-22 17:24:01,094 connection.py _on_message     273 received async msg: ddbc2e78-478f-4e63-bc51-2d57dbab44b8
+DEBUG 2022-11-22 17:24:01,363 connection.py _on_message     252 RECV < {"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"webviewId":6,"path":"pages/user/userindex","query":{},"openType":"reLaunch","__ts__":1669109041361},1669109041362]}}
+INFO  2022-11-22 17:24:01,365 app.py     _on_route_changed 588 Route changed, {'name': 'onAppRouteDone', 'args': [{'webviewId': 6, 'path': 'pages/user/userindex', 'query': {}, 'openType': 'reLaunch', '__ts__': 1669109041361}, 1669109041362]}
+DEBUG 2022-11-22 17:24:06,370 connection.py send            201 SEND > {"id":"ab88ded6-be1e-4132-9089-8830d14b0abf","method":"App.getCurrentPage","params":{}}
+DEBUG 2022-11-22 17:24:06,372 connection.py _on_message     252 RECV < {"id":"ab88ded6-be1e-4132-9089-8830d14b0abf","result":{"pageId":6,"path":"pages/user/userindex","query":{}}}
+INFO  2022-11-22 17:24:06,372 page.py    _get_elements_by_css 527 try to get elements: view[class="uh-bottom data-v-ec48ec48"]
+DEBUG 2022-11-22 17:24:06,374 connection.py send            201 SEND > {"id":"82f9c2bd-0125-4d48-8c2d-708500b9eda7","method":"Page.getElements","params":{"selector":"view[class=\"uh-bottom data-v-ec48ec48\"]","pageId":6}}
+DEBUG 2022-11-22 17:24:06,377 connection.py _on_message     252 RECV < {"id":"82f9c2bd-0125-4d48-8c2d-708500b9eda7","result":{"elements":[{"elementId":"8fdaa63a-a802-41d0-8e6e-573e9e9307cc","tagName":"view"}]}}
+INFO  2022-11-22 17:24:06,378 page.py    _get_elements_by_css 534 find elements success: [<minium.miniprogram.base_driver.element.BaseElement object at 0x000002941710A400>]
+DEBUG 2022-11-22 17:24:06,378 connection.py send            201 SEND > {"id":"cc78993e-db76-4dac-994d-b3e31969860e","method":"Element.tap","params":{"elementId":"8fdaa63a-a802-41d0-8e6e-573e9e9307cc","pageId":6}}
+DEBUG 2022-11-22 17:24:06,448 connection.py _on_message     252 RECV < {"id":"cc78993e-db76-4dac-994d-b3e31969860e","result":{}}
+DEBUG 2022-11-22 17:24:08,713 connection.py _on_message     252 RECV < {"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"webviewId":7,"path":"pageuser/searchpage","query":{"pointsSource":"1"},"openType":"navigateTo","__ts__":1669109048654},1669109048657]}}
+INFO  2022-11-22 17:24:08,715 app.py     _on_route_changed 588 Route changed, {'name': 'onAppRouteDone', 'args': [{'webviewId': 7, 'path': 'pageuser/searchpage', 'query': {'pointsSource': '1'}, 'openType': 'navigateTo', '__ts__': 1669109048654}, 1669109048657]}
+DEBUG 2022-11-22 17:24:11,450 connection.py send            201 SEND > {"id":"bd395dad-afe0-496c-a37f-2a834b5cbf14","method":"App.getCurrentPage","params":{}}
+DEBUG 2022-11-22 17:24:11,451 connection.py _on_message     252 RECV < {"id":"bd395dad-afe0-496c-a37f-2a834b5cbf14","result":{"pageId":7,"path":"pageuser/searchpage","query":{"pointsSource":"1"}}}
+INFO  2022-11-22 17:24:11,452 page.py    _get_elements_by_css 527 try to get elements: .input
+DEBUG 2022-11-22 17:24:11,453 connection.py send            201 SEND > {"id":"33c328e9-59cf-4565-a69e-a29d01150995","method":"Page.getElements","params":{"selector":".input","pageId":7}}
+DEBUG 2022-11-22 17:24:11,457 connection.py _on_message     252 RECV < {"id":"33c328e9-59cf-4565-a69e-a29d01150995","result":{"elements":[{"elementId":"8ddfc9e4-be0f-44ce-a5b7-3b3c0fa826a8","tagName":"input"}]}}
+INFO  2022-11-22 17:24:11,459 page.py    _get_elements_by_css 534 find elements success: [<minium.miniprogram.base_driver.element.FormElement object at 0x0000029416E9F700>]
+DEBUG 2022-11-22 17:24:11,459 connection.py send            201 SEND > {"id":"63ed75cc-1751-4a48-aa3b-7ad6fd032e77","method":"Element.tap","params":{"elementId":"8ddfc9e4-be0f-44ce-a5b7-3b3c0fa826a8","pageId":7}}
+DEBUG 2022-11-22 17:24:11,464 connection.py _on_message     252 RECV < {"id":"63ed75cc-1751-4a48-aa3b-7ad6fd032e77","result":{}}
+DEBUG 2022-11-22 17:24:16,465 connection.py send            201 SEND > {"id":"fcd2e227-e66e-4246-b32e-eee7d7918980","method":"App.getCurrentPage","params":{}}
+DEBUG 2022-11-22 17:24:16,467 connection.py _on_message     252 RECV < {"id":"fcd2e227-e66e-4246-b32e-eee7d7918980","result":{"pageId":7,"path":"pageuser/searchpage","query":{"pointsSource":"1"}}}
+INFO  2022-11-22 17:24:16,467 page.py    _get_elements_by_css 527 try to get elements: .input
+DEBUG 2022-11-22 17:24:16,469 connection.py send            201 SEND > {"id":"ac11b9df-c2aa-43d2-a394-c393bb269b5e","method":"Page.getElements","params":{"selector":".input","pageId":7}}
+DEBUG 2022-11-22 17:24:16,473 connection.py _on_message     252 RECV < {"id":"ac11b9df-c2aa-43d2-a394-c393bb269b5e","result":{"elements":[{"elementId":"8ddfc9e4-be0f-44ce-a5b7-3b3c0fa826a8","tagName":"input"}]}}
+INFO  2022-11-22 17:24:16,475 page.py    _get_elements_by_css 534 find elements success: [<minium.miniprogram.base_driver.element.FormElement object at 0x0000029417147130>]
+DEBUG 2022-11-22 17:24:16,475 connection.py send            201 SEND > {"id":"815c87df-f6ec-40ca-aa6e-b032207bcb6b","method":"Element.callFunction","params":{"functionName":"input.input","args":["\u9662\u5916"],"elementId":"8ddfc9e4-be0f-44ce-a5b7-3b3c0fa826a8","pageId":7}}
+DEBUG 2022-11-22 17:24:16,519 connection.py _on_message     252 RECV < {"id":"815c87df-f6ec-40ca-aa6e-b032207bcb6b","result":{}}
+DEBUG 2022-11-22 17:24:16,520 connection.py send            201 SEND > {"id":"47943b16-bb00-4a00-9f4f-1489795ae4c2","method":"App.getCurrentPage","params":{}}
+DEBUG 2022-11-22 17:24:16,522 connection.py _on_message     252 RECV < {"id":"47943b16-bb00-4a00-9f4f-1489795ae4c2","result":{"pageId":7,"path":"pageuser/searchpage","query":{"pointsSource":"1"}}}
+INFO  2022-11-22 17:24:16,524 page.py    _get_elements_by_css 527 try to get elements: .searchBtn
+DEBUG 2022-11-22 17:24:16,524 connection.py send            201 SEND > {"id":"ff3dd977-10cc-4872-925a-f5566ea4493d","method":"Page.getElements","params":{"selector":".searchBtn","pageId":7}}
+DEBUG 2022-11-22 17:24:16,532 connection.py _on_message     252 RECV < {"id":"ff3dd977-10cc-4872-925a-f5566ea4493d","result":{"elements":[{"elementId":"78274d3f-3b31-4305-94d7-4c91e8de49ad","tagName":"view"}]}}
+INFO  2022-11-22 17:24:16,532 page.py    _get_elements_by_css 534 find elements success: [<minium.miniprogram.base_driver.element.BaseElement object at 0x0000029417147940>]
+DEBUG 2022-11-22 17:24:16,533 connection.py send            201 SEND > {"id":"800e38f7-2a53-425a-a24a-42740e39877b","method":"Element.tap","params":{"elementId":"78274d3f-3b31-4305-94d7-4c91e8de49ad","pageId":7}}
+DEBUG 2022-11-22 17:24:16,573 connection.py _on_message     252 RECV < {"id":"800e38f7-2a53-425a-a24a-42740e39877b","result":{}}
+DEBUG 2022-11-22 17:24:26,576 minitest.py _miniTearDown   513 =========Current case Down: test_03_page_search_result=========
+INFO  2022-11-22 17:24:26,576 basenative.py wrapper         23  call BaseNative.get_start_up
+INFO  2022-11-22 17:24:26,577 basenative.py wrapper         27  call BaseNative.get_start_up end

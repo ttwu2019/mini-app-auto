@@ -1,0 +1,108 @@
+{
+    "case_name": "test_04_check_nurse_order_success",
+    "run_time": "20221128 09:43:04",
+    "test_type": "NurseOrderTest",
+    "case_doc": null,
+    "success": false,
+    "failures": "Traceback (most recent call last):\n  File \"c:\\users\\admin\\appdata\\local\\programs\\python\\python38\\lib\\site-packages\\minium\\framework\\libs\\unittest\\case.py\", line 32, in testPartExecutor\n    yield\n  File \"c:\\users\\admin\\appdata\\local\\programs\\python\\python38\\lib\\site-packages\\minium\\framework\\libs\\unittest\\case.py\", line 118, in run\n    self._callTestMethod(testMethod)\n  File \"c:\\users\\admin\\appdata\\local\\programs\\python\\python38\\lib\\unittest\\case.py\", line 633, in _callTestMethod\n    method()\n  File \"D:\\E\u62a4\u901a\\\u81ea\u52a8\u5316\\miniapp_auto\\test\\nurseorder_test.py\", line 23, in test_04_check_nurse_order_success\n    self.nurseOrderFlow.check_order_success(para.search_text, para.service_demo)\n  File \"D:\\E\u62a4\u901a\\\u81ea\u52a8\u5316\\miniapp_auto\\case\\flows\\nurseorderflow.py\", line 74, in check_order_success\n    self.mini.assertTrue(NurseConfirmPage.is_order_success(self))\n  File \"c:\\users\\admin\\appdata\\local\\programs\\python\\python38\\lib\\site-packages\\minium\\framework\\assertbase.py\", line 354, in _hook_assert\n    return attr(*args, **kwargs)\n  File \"c:\\users\\admin\\appdata\\local\\programs\\python\\python38\\lib\\unittest\\case.py\", line 765, in assertTrue\n    raise self.failureException(msg)\nAssertionError: False is not true\n",
+    "errors": "",
+    "start_timestamp": 1669599784.8948379,
+    "is_failure": true,
+    "is_error": false,
+    "module": "D:.E\u62a4\u901a.\u81ea\u52a8\u5316.miniapp_auto.test.nurseorder_test",
+    "package": "test",
+    "failed_line_num": 23,
+    "device": {
+        "system_info": {
+            "model": "iPhone 12/13 (Pro)",
+            "pixelRatio": 3,
+            "windowWidth": 390,
+            "windowHeight": 762,
+            "system": "iOS 10.0.1",
+            "language": "zh_CN",
+            "version": "8.0.5",
+            "deviceOrientation": "portrait",
+            "screenWidth": 390,
+            "screenHeight": 844,
+            "SDKVersion": "2.27.2",
+            "brand": "devtools",
+            "fontSizeSetting": 16,
+            "benchmarkLevel": 1,
+            "batteryLevel": 100,
+            "statusBarHeight": 47,
+            "bluetoothEnabled": true,
+            "locationEnabled": true,
+            "wifiEnabled": true,
+            "cameraAuthorized": true,
+            "locationAuthorized": true,
+            "microphoneAuthorized": true,
+            "notificationAuthorized": true,
+            "safeArea": {
+                "top": 44,
+                "left": 0,
+                "right": 390,
+                "bottom": 810,
+                "width": 390,
+                "height": 766
+            },
+            "platform": "devtools",
+            "enableDebug": false,
+            "devicePixelRatio": 3,
+            "mode": "default"
+        }
+    },
+    "log_filename": "run.log",
+    "error_type": "AssertionError",
+    "error_value": "False is not true",
+    "error_stages": [
+        "testMethod"
+    ],
+    "screen_info": [
+        {
+            "name": "setup",
+            "url": "/pages/user/userindex",
+            "path": "images\\setup.png",
+            "ts": 1669599785,
+            "datetime": "2022-11-28 09:43:05"
+        },
+        {
+            "name": "assertTrue-failed",
+            "url": "/pageactive/mentsuccess",
+            "path": "images\\assertTrue-failed.png",
+            "ts": 1669599853,
+            "datetime": "2022-11-28 09:44:13"
+        },
+        {
+            "name": "teardown",
+            "url": "/pageactive/mentsuccess",
+            "path": "images\\teardown.png",
+            "ts": 1669599854,
+            "datetime": "2022-11-28 09:44:14"
+        }
+    ],
+    "check_list": [],
+    "assert_list": [
+        {
+            "name": "assertTrue",
+            "ret": false,
+            "msg": "False is not true",
+            "img": "assertTrue-failed",
+            "wxml": "28094413.wxml"
+        }
+    ],
+    "perf_data": "{\"startup\": 0, \"avg_cpu\": 0, \"max_cpu\": 0, \"cpu_data_list\": [], \"avg_mem\": 0, \"max_mem\": 0, \"mem_data_list\": [], \"avg_fps\": 0, \"min_fps_rt\": 0, \"fps_data_list\": [], \"fps_time_series_list\": [], \"cpu_time_series_list\": [], \"mem_time_series_list\": []}",
+    "weapp_log_path": "weapp.log",
+    "request_log_path": "request.log",
+    "stop_timestamp": 1669599854.0782306,
+    "appId": "",
+    "appName": "",
+    "source": {
+        "code": [
+            "    def test_04_check_nurse_order_success(self):\n",
+            "        print(\"\u68c0\u67e5\u62a4\u58eb\u4e0b\u5355\u6210\u529f==================\")\n",
+            "        self.nurseOrderFlow.check_order_success(para.search_text, para.service_demo)\n"
+        ],
+        "start": 21
+    },
+    "filename": "result.json"
+}

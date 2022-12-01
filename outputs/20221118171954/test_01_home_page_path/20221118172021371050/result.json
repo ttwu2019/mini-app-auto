@@ -1,0 +1,93 @@
+{
+    "case_name": "test_01_home_page_path",
+    "run_time": "20221118 17:20:21",
+    "test_type": "HomePageTest",
+    "case_doc": null,
+    "success": false,
+    "failures": "",
+    "errors": "Traceback (most recent call last):\n  File \"c:\\users\\admin\\appdata\\local\\programs\\python\\python38\\lib\\site-packages\\minium\\framework\\libs\\unittest\\case.py\", line 32, in testPartExecutor\n    yield\n  File \"c:\\users\\admin\\appdata\\local\\programs\\python\\python38\\lib\\site-packages\\minium\\framework\\libs\\unittest\\case.py\", line 118, in run\n    self._callTestMethod(testMethod)\n  File \"c:\\users\\admin\\appdata\\local\\programs\\python\\python38\\lib\\unittest\\case.py\", line 633, in _callTestMethod\n    method()\n  File \"D:\\E\u62a4\u901a\\\u81ea\u52a8\u5316\\miniapp_auto\\case\\homepage_test.py\", line 22, in test_01_home_page_path\n    print(\"\u68c0\u67e5\u5f53\u524d\u9875\u9762\u8def\u5f84++++++++++++\")\nOSError: [WinError 233] \u7ba1\u9053\u7684\u53e6\u4e00\u7aef\u4e0a\u65e0\u4efb\u4f55\u8fdb\u7a0b\u3002\n",
+    "start_timestamp": 1668763221.375035,
+    "is_failure": false,
+    "is_error": true,
+    "module": "D:.E\u62a4\u901a.\u81ea\u52a8\u5316.miniapp_auto.case.homepage_test",
+    "package": "case",
+    "failed_line_num": 22,
+    "device": {
+        "system_info": {
+            "model": "iPhone 12/13 (Pro)",
+            "pixelRatio": 3,
+            "windowWidth": 390,
+            "windowHeight": 762,
+            "system": "iOS 10.0.1",
+            "language": "zh_CN",
+            "version": "8.0.5",
+            "deviceOrientation": "portrait",
+            "screenWidth": 390,
+            "screenHeight": 844,
+            "SDKVersion": "2.27.2",
+            "brand": "devtools",
+            "fontSizeSetting": 16,
+            "benchmarkLevel": 1,
+            "batteryLevel": 100,
+            "statusBarHeight": 47,
+            "bluetoothEnabled": true,
+            "locationEnabled": true,
+            "wifiEnabled": true,
+            "cameraAuthorized": true,
+            "locationAuthorized": true,
+            "microphoneAuthorized": true,
+            "notificationAuthorized": true,
+            "safeArea": {
+                "top": 44,
+                "left": 0,
+                "right": 390,
+                "bottom": 810,
+                "width": 390,
+                "height": 766
+            },
+            "platform": "devtools",
+            "enableDebug": false,
+            "devicePixelRatio": 3,
+            "mode": "default"
+        }
+    },
+    "log_filename": "run.log",
+    "error_type": "OSError",
+    "error_value": "22",
+    "error_stages": [
+        "testMethod"
+    ],
+    "screen_info": [
+        {
+            "name": "setup",
+            "url": "/pages/user/userindex",
+            "path": "images\\setup.png",
+            "ts": 1668763303,
+            "datetime": "2022-11-18 17:21:43"
+        },
+        {
+            "name": "teardown",
+            "url": "/pages/user/userindex",
+            "path": "images\\teardown.png",
+            "ts": 1668763304,
+            "datetime": "2022-11-18 17:21:44"
+        }
+    ],
+    "check_list": [],
+    "assert_list": [],
+    "perf_data": "{\"startup\": 0, \"avg_cpu\": 0, \"max_cpu\": 0, \"cpu_data_list\": [], \"avg_mem\": 0, \"max_mem\": 0, \"mem_data_list\": [], \"avg_fps\": 0, \"min_fps_rt\": 0, \"fps_data_list\": [], \"fps_time_series_list\": [], \"cpu_time_series_list\": [], \"mem_time_series_list\": []}",
+    "weapp_log_path": "weapp.log",
+    "request_log_path": "request.log",
+    "stop_timestamp": 1668763304.105141,
+    "appId": "",
+    "appName": "",
+    "source": {
+        "code": [
+            "    def test_01_home_page_path(self):\n",
+            "        print(\"\u68c0\u67e5\u5f53\u524d\u9875\u9762\u8def\u5f84++++++++++++\")\n",
+            "        self.homePage.check_homepage_path()\n"
+        ],
+        "start": 21
+    },
+    "filename": "result.json"
+}

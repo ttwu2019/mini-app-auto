@@ -1,0 +1,79 @@
+{
+    "case_name": "test_03_page_search_result",
+    "run_time": "20221122 16:27:16",
+    "test_type": "HomePageTest",
+    "case_doc": null,
+    "success": false,
+    "failures": "",
+    "errors": "Traceback (most recent call last):\n  File \"c:\\users\\admin\\appdata\\local\\programs\\python\\python38\\lib\\site-packages\\minium\\framework\\libs\\unittest\\case.py\", line 32, in testPartExecutor\n    yield\n  File \"c:\\users\\admin\\appdata\\local\\programs\\python\\python38\\lib\\site-packages\\minium\\framework\\libs\\unittest\\case.py\", line 118, in run\n    self._callTestMethod(testMethod)\n  File \"c:\\users\\admin\\appdata\\local\\programs\\python\\python38\\lib\\unittest\\case.py\", line 633, in _callTestMethod\n    method()\n  File \"D:\\E\u62a4\u901a\\\u81ea\u52a8\u5316\\miniapp_auto\\case\\homepage_test.py\", line 39, in test_03_page_search_result\n    self.searchpage.check_search_results()\n  File \"D:\\E\u62a4\u901a\\\u81ea\u52a8\u5316\\miniapp_auto\\case\\pages\\searchpage.py\", line 27, in check_search_results\n    search_input = self.mini.page.get_element(SearchPage.locators['SEARCH_INPUT'])\n  File \"c:\\users\\admin\\appdata\\local\\programs\\python\\python38\\lib\\site-packages\\minium\\miniprogram\\base_driver\\minium_log.py\", line 131, in wrapper\n    result = func(*args, **kwargs)\n  File \"c:\\users\\admin\\appdata\\local\\programs\\python\\python38\\lib\\site-packages\\minium\\miniprogram\\base_driver\\page.py\", line 256, in get_element\n    raise MiniElementNotFoundError(\"element[%s] not found\" % selector)\nminium.framework.exception.MiniElementNotFoundError: element[view[class=\"input data-v-20ed4784\"]] not found\n",
+    "start_timestamp": 1669105636.6688805,
+    "is_failure": false,
+    "is_error": true,
+    "module": "D:.E\u62a4\u901a.\u81ea\u52a8\u5316.miniapp_auto.case.homepage_test",
+    "package": "case",
+    "failed_line_num": 39,
+    "device": {
+        "system_info": {
+            "model": "iPhone 12/13 (Pro)",
+            "pixelRatio": 3,
+            "windowWidth": 390,
+            "windowHeight": 762,
+            "system": "iOS 10.0.1",
+            "language": "zh_CN",
+            "version": "8.0.5",
+            "deviceOrientation": "portrait",
+            "screenWidth": 390,
+            "screenHeight": 844,
+            "SDKVersion": "2.27.2",
+            "brand": "devtools",
+            "fontSizeSetting": 16,
+            "benchmarkLevel": 1,
+            "batteryLevel": 100,
+            "statusBarHeight": 47,
+            "bluetoothEnabled": true,
+            "locationEnabled": true,
+            "wifiEnabled": true,
+            "cameraAuthorized": true,
+            "locationAuthorized": true,
+            "microphoneAuthorized": true,
+            "notificationAuthorized": true,
+            "safeArea": {
+                "top": 44,
+                "left": 0,
+                "right": 390,
+                "bottom": 810,
+                "width": 390,
+                "height": 766
+            },
+            "platform": "devtools",
+            "enableDebug": false,
+            "devicePixelRatio": 3,
+            "mode": "default"
+        }
+    },
+    "log_filename": "run.log",
+    "error_type": "MiniElementNotFoundError",
+    "error_value": "element[view[class=\"input data-v-20ed4784\"]] not found",
+    "error_stages": [
+        "testMethod"
+    ],
+    "screen_info": [],
+    "check_list": [],
+    "assert_list": [],
+    "perf_data": "{\"startup\": 0, \"avg_cpu\": 0, \"max_cpu\": 0, \"cpu_data_list\": [], \"avg_mem\": 0, \"max_mem\": 0, \"mem_data_list\": [], \"avg_fps\": 0, \"min_fps_rt\": 0, \"fps_data_list\": [], \"fps_time_series_list\": [], \"cpu_time_series_list\": [], \"mem_time_series_list\": []}",
+    "weapp_log_path": "weapp.log",
+    "request_log_path": "request.log",
+    "page_wxml": "22162737.wxml",
+    "stop_timestamp": 1669105657.1710858,
+    "appId": "",
+    "appName": "",
+    "source": {
+        "code": [
+            "    def test_03_page_search_result(self):\n",
+            "        print(\"\u68c0\u67e5\u641c\u7d22\u9875\u641c\u7d22==================\")\n",
+            "        self.searchpage.check_search_results()\n"
+        ],
+        "start": 37
+    },
+    "filename": "result.json"
+}

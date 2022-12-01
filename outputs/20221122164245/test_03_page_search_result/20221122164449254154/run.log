@@ -1,0 +1,48 @@
+INFO  2022-11-22 16:44:49,255 minitest.py _miniSetUp      279 =========Current case: test_03_page_search_result=========
+INFO  2022-11-22 16:44:49,256 minitest.py _miniSetUp      280 package info: D:.E护通.自动化.miniapp_auto.case.homepage_test, case info: HomePageTest.test_03_page_search_result
+INFO  2022-11-22 16:44:49,256 basenative.py wrapper         23  call BaseNative.back_to_miniprogram
+INFO  2022-11-22 16:44:49,256 basenative.py back_to_miniprogram 528 try back_to_miniprogram 3
+INFO  2022-11-22 16:44:49,256 basenative.py wrapper         27  call BaseNative.back_to_miniprogram end
+INFO  2022-11-22 16:44:49,257 app.py     relaunch        387 ReLaunch: /pages/user/userindex
+DEBUG 2022-11-22 16:44:49,257 connection.py send_async      211 ASYNC_SEND > {"id": "51c8c993-3f12-495e-9d7f-5234e681a9d3", "method": "App.callWxMethod", "params": {"method": "reLaunch", "args": [{"url": "/pages/user/userindex"}]}}
+DEBUG 2022-11-22 16:44:49,301 connection.py _on_message     252 RECV < {"id":"51c8c993-3f12-495e-9d7f-5234e681a9d3","result":{"result":{"errMsg":"reLaunch:ok"}}}
+DEBUG 2022-11-22 16:44:49,301 connection.py _on_message     252 RECV < {"id":"51c8c993-3f12-495e-9d7f-5234e681a9d3","result":{"result":{"errMsg":"reLaunch:ok"}}}
+INFO  2022-11-22 16:44:49,302 connection.py _on_message     273 received async msg: 51c8c993-3f12-495e-9d7f-5234e681a9d3
+INFO  2022-11-22 16:44:49,302 connection.py _on_message     273 received async msg: 51c8c993-3f12-495e-9d7f-5234e681a9d3
+DEBUG 2022-11-22 16:44:49,575 connection.py _on_message     252 RECV < {"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"webviewId":6,"path":"pages/user/userindex","query":{},"openType":"reLaunch","__ts__":1669106689572},1669106689573]}}
+DEBUG 2022-11-22 16:44:49,575 connection.py _on_message     252 RECV < {"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"webviewId":6,"path":"pages/user/userindex","query":{},"openType":"reLaunch","__ts__":1669106689572},1669106689573]}}
+INFO  2022-11-22 16:44:49,578 app.py     _on_route_changed 588 Route changed, {'name': 'onAppRouteDone', 'args': [{'webviewId': 6, 'path': 'pages/user/userindex', 'query': {}, 'openType': 'reLaunch', '__ts__': 1669106689572}, 1669106689573]}
+DEBUG 2022-11-22 16:44:59,581 connection.py send            201 SEND > {"id":"50043899-8aed-4a85-9c09-cfb81e4e6260","method":"App.getCurrentPage","params":{}}
+DEBUG 2022-11-22 16:44:59,588 connection.py _on_message     252 RECV < {"id":"50043899-8aed-4a85-9c09-cfb81e4e6260","result":{"pageId":6,"path":"pages/user/userindex","query":{}}}
+DEBUG 2022-11-22 16:44:59,589 connection.py _on_message     252 RECV < {"id":"50043899-8aed-4a85-9c09-cfb81e4e6260","result":{"pageId":6,"path":"pages/user/userindex","query":{}}}
+INFO  2022-11-22 16:44:59,590 connection.py _on_message     273 received async msg: 50043899-8aed-4a85-9c09-cfb81e4e6260
+INFO  2022-11-22 16:44:59,593 page.py    _get_elements_by_css 527 try to get elements: view[class="uh-bottom data-v-ec48ec48"]
+DEBUG 2022-11-22 16:44:59,595 connection.py send            201 SEND > {"id":"e6485af6-1f0f-4e78-a703-7148db6f484f","method":"Page.getElements","params":{"selector":"view[class=\"uh-bottom data-v-ec48ec48\"]","pageId":6}}
+DEBUG 2022-11-22 16:44:59,600 connection.py _on_message     252 RECV < {"id":"e6485af6-1f0f-4e78-a703-7148db6f484f","result":{"elements":[{"elementId":"ead5ade9-0c44-4d60-98e1-18e2817865f1","tagName":"view"}]}}
+DEBUG 2022-11-22 16:44:59,600 connection.py _on_message     252 RECV < {"id":"e6485af6-1f0f-4e78-a703-7148db6f484f","result":{"elements":[{"elementId":"ead5ade9-0c44-4d60-98e1-18e2817865f1","tagName":"view"}]}}
+INFO  2022-11-22 16:44:59,601 page.py    _get_elements_by_css 534 find elements success: [<minium.miniprogram.base_driver.element.BaseElement object at 0x000002681893F7C0>]
+INFO  2022-11-22 16:44:59,601 connection.py _on_message     273 received async msg: e6485af6-1f0f-4e78-a703-7148db6f484f
+DEBUG 2022-11-22 16:44:59,601 connection.py send            201 SEND > {"id":"3e158efd-966b-48f2-a346-a70cb45e25da","method":"Element.tap","params":{"elementId":"ead5ade9-0c44-4d60-98e1-18e2817865f1","pageId":6}}
+DEBUG 2022-11-22 16:44:59,684 connection.py _on_message     252 RECV < {"id":"3e158efd-966b-48f2-a346-a70cb45e25da","result":{}}
+DEBUG 2022-11-22 16:44:59,684 connection.py _on_message     252 RECV < {"id":"3e158efd-966b-48f2-a346-a70cb45e25da","result":{}}
+INFO  2022-11-22 16:44:59,685 connection.py _on_message     273 received async msg: 3e158efd-966b-48f2-a346-a70cb45e25da
+DEBUG 2022-11-22 16:45:09,686 connection.py send            201 SEND > {"id":"187321b1-a393-48ac-a3a6-3e7a4a5f3616","method":"App.getCurrentPage","params":{}}
+DEBUG 2022-11-22 16:45:09,689 connection.py _on_message     252 RECV < {"id":"187321b1-a393-48ac-a3a6-3e7a4a5f3616","result":{"pageId":7,"path":"pageuser/searchpage","query":{"pointsSource":"1"}}}
+DEBUG 2022-11-22 16:45:09,689 connection.py _on_message     252 RECV < {"id":"187321b1-a393-48ac-a3a6-3e7a4a5f3616","result":{"pageId":7,"path":"pageuser/searchpage","query":{"pointsSource":"1"}}}
+DEBUG 2022-11-22 16:45:09,690 minitest.py _miniTearDown   513 =========Current case Down: test_03_page_search_result=========
+INFO  2022-11-22 16:45:09,691 connection.py _on_message     273 received async msg: 187321b1-a393-48ac-a3a6-3e7a4a5f3616
+INFO  2022-11-22 16:45:09,691 basenative.py wrapper         23  call BaseNative.get_start_up
+INFO  2022-11-22 16:45:09,691 basenative.py wrapper         27  call BaseNative.get_start_up end
+ERROR 2022-11-22 16:45:09,693 assertbase.py _teardown_collect 273 <bound method HomePageTest.test_03_page_search_result of <case.homepage_test.HomePageTest testMethod=test_03_page_search_result>>
+Traceback (most recent call last):
+  File "c:\users\admin\appdata\local\programs\python\python38\lib\site-packages\minium\framework\libs\unittest\case.py", line 32, in testPartExecutor
+    yield
+  File "c:\users\admin\appdata\local\programs\python\python38\lib\site-packages\minium\framework\libs\unittest\case.py", line 118, in run
+    self._callTestMethod(testMethod)
+  File "c:\users\admin\appdata\local\programs\python\python38\lib\unittest\case.py", line 633, in _callTestMethod
+    method()
+  File "D:\E护通\自动化\miniapp_auto\case\homepage_test.py", line 39, in test_03_page_search_result
+    self.searchpage.check_search_results()
+  File "D:\E护通\自动化\miniapp_auto\case\pages\searchpage.py", line 28, in check_search_results
+    search_click = self.mini.page.get_element(SearchPage.SearchPage['SEARCH_INPUT_CLICK'])
+AttributeError: type object 'SearchPage' has no attribute 'SearchPage'

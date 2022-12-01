@@ -1,0 +1,29 @@
+INFO  2022-11-22 18:04:18,269 minitest.py _miniSetUp      279 =========Current case: test_03_page_search_result=========
+INFO  2022-11-22 18:04:18,270 minitest.py _miniSetUp      280 package info: D:.E护通.自动化.miniapp_auto.case.searchPage_test, case info: SearchPageTest.test_03_page_search_result
+INFO  2022-11-22 18:04:18,272 basenative.py wrapper         23  call BaseNative.back_to_miniprogram
+INFO  2022-11-22 18:04:18,273 basenative.py back_to_miniprogram 528 try back_to_miniprogram 3
+INFO  2022-11-22 18:04:18,273 basenative.py wrapper         27  call BaseNative.back_to_miniprogram end
+INFO  2022-11-22 18:04:18,275 app.py     relaunch        387 ReLaunch: /pages/user/userindex
+DEBUG 2022-11-22 18:04:18,276 connection.py send_async      211 ASYNC_SEND > {"id": "cbb5a159-20a0-4af9-a691-79777e9d507d", "method": "App.callWxMethod", "params": {"method": "reLaunch", "args": [{"url": "/pages/user/userindex"}]}}
+DEBUG 2022-11-22 18:04:18,332 connection.py _on_message     252 RECV < {"id":"cbb5a159-20a0-4af9-a691-79777e9d507d","result":{"result":{"errMsg":"reLaunch:ok"}}}
+INFO  2022-11-22 18:04:18,333 connection.py _on_message     273 received async msg: cbb5a159-20a0-4af9-a691-79777e9d507d
+DEBUG 2022-11-22 18:04:18,720 connection.py _on_message     252 RECV < {"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"webviewId":7,"path":"pages/user/userindex","query":{},"openType":"reLaunch","__ts__":1669111458718},1669111458719]}}
+INFO  2022-11-22 18:04:18,721 app.py     _on_route_changed 588 Route changed, {'name': 'onAppRouteDone', 'args': [{'webviewId': 7, 'path': 'pages/user/userindex', 'query': {}, 'openType': 'reLaunch', '__ts__': 1669111458718}, 1669111458719]}
+DEBUG 2022-11-22 18:04:18,723 minitest.py _miniTearDown   513 =========Current case Down: test_03_page_search_result=========
+INFO  2022-11-22 18:04:18,723 basenative.py wrapper         23  call BaseNative.get_start_up
+INFO  2022-11-22 18:04:18,724 basenative.py wrapper         27  call BaseNative.get_start_up end
+ERROR 2022-11-22 18:04:18,728 assertbase.py _teardown_collect 273 <bound method SearchPageTest.test_03_page_search_result of <case.searchPage_test.SearchPageTest testMethod=test_03_page_search_result>>
+Traceback (most recent call last):
+  File "c:\users\admin\appdata\local\programs\python\python38\lib\site-packages\minium\framework\libs\unittest\case.py", line 32, in testPartExecutor
+    yield
+  File "c:\users\admin\appdata\local\programs\python\python38\lib\site-packages\minium\framework\libs\unittest\case.py", line 118, in run
+    self._callTestMethod(testMethod)
+  File "c:\users\admin\appdata\local\programs\python\python38\lib\unittest\case.py", line 633, in _callTestMethod
+    method()
+  File "D:\E护通\自动化\miniapp_auto\case\searchPage_test.py", line 23, in test_03_page_search_result
+    self.searchPage.check_search_results('院外居家服务')
+  File "D:\E护通\自动化\miniapp_auto\case\pages\searchpage.py", line 25, in check_search_results
+    BaseSelector.waitToClick(self, SearchPage.homepage_locators['TOP_SEARCH_INPUT'])
+  File "D:\E护通\自动化\miniapp_auto\case\base\baseselector.py", line 8, in waitToClick
+    self.page.wait_for(selector, max_timeout=10)
+AttributeError: 'SearchPage' object has no attribute 'page'

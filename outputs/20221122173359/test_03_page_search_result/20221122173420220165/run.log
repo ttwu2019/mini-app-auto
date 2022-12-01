@@ -1,0 +1,48 @@
+INFO  2022-11-22 17:34:20,223 minitest.py _miniSetUp      279 =========Current case: test_03_page_search_result=========
+INFO  2022-11-22 17:34:20,224 minitest.py _miniSetUp      280 package info: D:.E护通.自动化.miniapp_auto.case.searchPage_test, case info: SearchPageTest.test_03_page_search_result
+INFO  2022-11-22 17:34:20,225 basenative.py wrapper         23  call BaseNative.back_to_miniprogram
+INFO  2022-11-22 17:34:20,227 basenative.py back_to_miniprogram 528 try back_to_miniprogram 3
+INFO  2022-11-22 17:34:20,227 basenative.py wrapper         27  call BaseNative.back_to_miniprogram end
+INFO  2022-11-22 17:34:20,228 app.py     relaunch        387 ReLaunch: /pages/user/userindex
+DEBUG 2022-11-22 17:34:20,230 connection.py send_async      211 ASYNC_SEND > {"id": "588d2b7e-b155-4469-9285-4f70c293d216", "method": "App.callWxMethod", "params": {"method": "reLaunch", "args": [{"url": "/pages/user/userindex"}]}}
+DEBUG 2022-11-22 17:34:20,302 connection.py _on_message     252 RECV < {"id":"588d2b7e-b155-4469-9285-4f70c293d216","result":{"result":{"errMsg":"reLaunch:ok"}}}
+INFO  2022-11-22 17:34:20,307 connection.py _on_message     273 received async msg: 588d2b7e-b155-4469-9285-4f70c293d216
+DEBUG 2022-11-22 17:34:20,777 connection.py _on_message     252 RECV < {"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"webviewId":7,"path":"pages/user/userindex","query":{},"openType":"reLaunch","__ts__":1669109660775},1669109660775]}}
+INFO  2022-11-22 17:34:20,779 app.py     _on_route_changed 588 Route changed, {'name': 'onAppRouteDone', 'args': [{'webviewId': 7, 'path': 'pages/user/userindex', 'query': {}, 'openType': 'reLaunch', '__ts__': 1669109660775}, 1669109660775]}
+DEBUG 2022-11-22 17:34:25,781 connection.py send            201 SEND > {"id":"b941e09a-1bf3-4a16-b37d-e5719832dd1e","method":"App.getCurrentPage","params":{}}
+DEBUG 2022-11-22 17:34:25,783 connection.py _on_message     252 RECV < {"id":"b941e09a-1bf3-4a16-b37d-e5719832dd1e","result":{"pageId":7,"path":"pages/user/userindex","query":{}}}
+INFO  2022-11-22 17:34:25,783 page.py    _get_elements_by_css 527 try to get elements: view[class="uh-bottom data-v-ec48ec48"]
+DEBUG 2022-11-22 17:34:25,785 connection.py send            201 SEND > {"id":"dd215150-8d0d-417d-8ecc-67bdf96a7944","method":"Page.getElements","params":{"selector":"view[class=\"uh-bottom data-v-ec48ec48\"]","pageId":7}}
+DEBUG 2022-11-22 17:34:25,788 connection.py _on_message     252 RECV < {"id":"dd215150-8d0d-417d-8ecc-67bdf96a7944","result":{"elements":[{"elementId":"b28f6eda-030e-4ff3-b4db-7c406f192212","tagName":"view"}]}}
+INFO  2022-11-22 17:34:25,788 page.py    _get_elements_by_css 534 find elements success: [<minium.miniprogram.base_driver.element.BaseElement object at 0x000002DF42615B20>]
+DEBUG 2022-11-22 17:34:25,789 connection.py send            201 SEND > {"id":"f1d317e4-f0f2-45d5-876c-29b45f261116","method":"Element.tap","params":{"elementId":"b28f6eda-030e-4ff3-b4db-7c406f192212","pageId":7}}
+DEBUG 2022-11-22 17:34:25,846 connection.py _on_message     252 RECV < {"id":"f1d317e4-f0f2-45d5-876c-29b45f261116","result":{}}
+DEBUG 2022-11-22 17:34:28,076 connection.py _on_message     252 RECV < {"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"webviewId":8,"path":"pageuser/searchpage","query":{"pointsSource":"1"},"openType":"navigateTo","__ts__":1669109668030},1669109668032]}}
+INFO  2022-11-22 17:34:28,078 app.py     _on_route_changed 588 Route changed, {'name': 'onAppRouteDone', 'args': [{'webviewId': 8, 'path': 'pageuser/searchpage', 'query': {'pointsSource': '1'}, 'openType': 'navigateTo', '__ts__': 1669109668030}, 1669109668032]}
+DEBUG 2022-11-22 17:34:35,849 connection.py send            201 SEND > {"id":"d2326453-8cfe-4209-845d-0c2dd145453b","method":"App.getCurrentPage","params":{}}
+DEBUG 2022-11-22 17:34:35,850 connection.py _on_message     252 RECV < {"id":"d2326453-8cfe-4209-845d-0c2dd145453b","result":{"pageId":8,"path":"pageuser/searchpage","query":{"pointsSource":"1"}}}
+INFO  2022-11-22 17:34:35,851 page.py    _get_elements_by_css 527 try to get elements: .input
+DEBUG 2022-11-22 17:34:35,852 connection.py send            201 SEND > {"id":"fb4ab2ab-695c-45ba-a821-dc2a86d94990","method":"Page.getElements","params":{"selector":".input","pageId":8}}
+DEBUG 2022-11-22 17:34:35,855 connection.py _on_message     252 RECV < {"id":"fb4ab2ab-695c-45ba-a821-dc2a86d94990","result":{"elements":[{"elementId":"cd125f42-3df0-4332-bc97-d579362b929c","tagName":"input"}]}}
+INFO  2022-11-22 17:34:35,856 page.py    _get_elements_by_css 534 find elements success: [<minium.miniprogram.base_driver.element.FormElement object at 0x000002DF42615070>]
+DEBUG 2022-11-22 17:34:35,856 connection.py send            201 SEND > {"id":"fc1fd093-9df1-4160-b408-06317bb6e709","method":"Element.tap","params":{"elementId":"cd125f42-3df0-4332-bc97-d579362b929c","pageId":8}}
+DEBUG 2022-11-22 17:34:35,867 connection.py _on_message     252 RECV < {"id":"fc1fd093-9df1-4160-b408-06317bb6e709","result":{}}
+DEBUG 2022-11-22 17:34:45,868 connection.py send            201 SEND > {"id":"514b9174-9df3-41bf-b52e-703bc896d47b","method":"App.getCurrentPage","params":{}}
+DEBUG 2022-11-22 17:34:45,870 connection.py _on_message     252 RECV < {"id":"514b9174-9df3-41bf-b52e-703bc896d47b","result":{"pageId":8,"path":"pageuser/searchpage","query":{"pointsSource":"1"}}}
+INFO  2022-11-22 17:34:45,871 page.py    _get_elements_by_css 527 try to get elements: .input
+DEBUG 2022-11-22 17:34:45,872 connection.py send            201 SEND > {"id":"18b72843-c1db-41a6-aa93-c6bca47e0124","method":"Page.getElements","params":{"selector":".input","pageId":8}}
+DEBUG 2022-11-22 17:34:45,877 connection.py _on_message     252 RECV < {"id":"18b72843-c1db-41a6-aa93-c6bca47e0124","result":{"elements":[{"elementId":"cd125f42-3df0-4332-bc97-d579362b929c","tagName":"input"}]}}
+INFO  2022-11-22 17:34:45,878 page.py    _get_elements_by_css 534 find elements success: [<minium.miniprogram.base_driver.element.FormElement object at 0x000002DF42615250>]
+DEBUG 2022-11-22 17:34:45,878 connection.py send            201 SEND > {"id":"1af56ac0-7691-4c38-a5e0-8b6a5aba6261","method":"Element.callFunction","params":{"functionName":"input.input","args":["\u9662\u5916\u5c45\u5bb6\u670d\u52a1"],"elementId":"cd125f42-3df0-4332-bc97-d579362b929c","pageId":8}}
+DEBUG 2022-11-22 17:34:45,899 connection.py _on_message     252 RECV < {"id":"1af56ac0-7691-4c38-a5e0-8b6a5aba6261","result":{}}
+DEBUG 2022-11-22 17:34:50,899 connection.py send            201 SEND > {"id":"a3175d55-0e68-4a95-9a99-52a1515c865a","method":"App.getCurrentPage","params":{}}
+DEBUG 2022-11-22 17:34:50,900 connection.py _on_message     252 RECV < {"id":"a3175d55-0e68-4a95-9a99-52a1515c865a","result":{"pageId":8,"path":"pageuser/searchpage","query":{"pointsSource":"1"}}}
+INFO  2022-11-22 17:34:50,901 page.py    _get_elements_by_css 527 try to get elements: .searchBtn
+DEBUG 2022-11-22 17:34:50,903 connection.py send            201 SEND > {"id":"9662edd0-d58c-42d6-98d5-140331c736cf","method":"Page.getElements","params":{"selector":".searchBtn","pageId":8}}
+DEBUG 2022-11-22 17:34:50,906 connection.py _on_message     252 RECV < {"id":"9662edd0-d58c-42d6-98d5-140331c736cf","result":{"elements":[{"elementId":"262bc10b-5e8f-4253-b125-c1afe262c748","tagName":"view"}]}}
+INFO  2022-11-22 17:34:50,907 page.py    _get_elements_by_css 534 find elements success: [<minium.miniprogram.base_driver.element.BaseElement object at 0x000002DF425DC640>]
+DEBUG 2022-11-22 17:34:50,907 connection.py send            201 SEND > {"id":"348526d2-72e0-4baa-9342-bdc800f0f439","method":"Element.tap","params":{"elementId":"262bc10b-5e8f-4253-b125-c1afe262c748","pageId":8}}
+DEBUG 2022-11-22 17:34:50,938 connection.py _on_message     252 RECV < {"id":"348526d2-72e0-4baa-9342-bdc800f0f439","result":{}}
+DEBUG 2022-11-22 17:34:50,939 minitest.py _miniTearDown   513 =========Current case Down: test_03_page_search_result=========
+INFO  2022-11-22 17:34:50,939 basenative.py wrapper         23  call BaseNative.get_start_up
+INFO  2022-11-22 17:34:50,940 basenative.py wrapper         27  call BaseNative.get_start_up end

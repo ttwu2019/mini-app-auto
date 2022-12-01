@@ -1,0 +1,38 @@
+INFO  2022-11-18 17:20:21,376 minitest.py _miniSetUp      279 =========Current case: test_01_home_page_path=========
+INFO  2022-11-18 17:20:21,378 minitest.py _miniSetUp      280 package info: D:.E护通.自动化.miniapp_auto.case.homepage_test, case info: HomePageTest.test_01_home_page_path
+INFO  2022-11-18 17:20:21,378 basenative.py wrapper         23  call BaseNative.back_to_miniprogram
+INFO  2022-11-18 17:20:21,379 basenative.py back_to_miniprogram 528 try back_to_miniprogram 3
+INFO  2022-11-18 17:20:21,380 basenative.py wrapper         27  call BaseNative.back_to_miniprogram end
+INFO  2022-11-18 17:20:21,381 app.py     relaunch        387 ReLaunch: /pages/user/userindex
+DEBUG 2022-11-18 17:20:21,382 connection.py send_async      211 ASYNC_SEND > {"id": "208e51bc-f9aa-45eb-856a-b34e7b08cdc5", "method": "App.callWxMethod", "params": {"method": "reLaunch", "args": [{"url": "/pages/user/userindex"}]}}
+DEBUG 2022-11-18 17:20:21,449 connection.py _on_message     252 RECV < {"id":"208e51bc-f9aa-45eb-856a-b34e7b08cdc5","result":{"result":{"errMsg":"reLaunch:ok"}}}
+INFO  2022-11-18 17:20:21,450 connection.py _on_message     273 received async msg: 208e51bc-f9aa-45eb-856a-b34e7b08cdc5
+DEBUG 2022-11-18 17:20:21,825 connection.py _on_message     252 RECV < {"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"webviewId":4,"path":"pages/user/userindex","query":{},"openType":"reLaunch","__ts__":1668763221820},1668763221823]}}
+INFO  2022-11-18 17:20:21,828 app.py     _on_route_changed 588 Route changed, {'name': 'onAppRouteDone', 'args': [{'webviewId': 4, 'path': 'pages/user/userindex', 'query': {}, 'openType': 'reLaunch', '__ts__': 1668763221820}, 1668763221823]}
+INFO  2022-11-18 17:20:21,830 minitest.py capture         575 capture setup.png
+INFO  2022-11-18 17:20:21,831 basenative.py wrapper         23  call IdeNative.screen_shot
+DEBUG 2022-11-18 17:20:21,831 connection.py send            201 SEND > {"id":"369e6335-34f9-46eb-8e1f-88d407a68f16","method":"App.captureScreenshot","params":{}}
+INFO  2022-11-18 17:21:22,016 minitest.py capture         575 capture setup.png
+INFO  2022-11-18 17:21:22,016 basenative.py wrapper         23  call IdeNative.screen_shot
+DEBUG 2022-11-18 17:21:22,017 connection.py send            201 SEND > {"id":"c6e78ce3-79e4-4639-a720-caebf8249fe6","method":"App.captureScreenshot","params":{}}
+DEBUG 2022-11-18 17:21:43,907 connection.py _on_message     250 RECV < {"id":"c6e78ce3-79e4-4639-a720-caebf8249fe6","result":{"data":"iVBORw0KGgoAAAANSUhEUgAAAYYAAAL6CAIAAAC96maVAAAAAXNSR0IArs4c6QAAIABJREFUeJzsvemTJcdxJ+geebz7vbq7qo/qbnShgcYpggIJDChqxCGo0UFqZKaFdmyoL/thbdf2y9r+GftlP85+k9mIZpqhVjZaQrvaHZKSjSQuQBICCRJCA+hmH4U+6q5Xr169I4/w/ZCZkZHny3xVDVST4QZkZ+WLdPfwiHD3+EVkJlb/6GsAAAAIQASIGUcA8soAIWD0PHEkyuQTcPPI4xOcE8pyIsdilHprUQaJ27JNkCT5smcZ7990+wClq5ljsQxFMKpG5EpBFidg3DR2x2qLpPDsushWn4p1uqJJQwdHWWyi3SPnBVo2p29k95PIqMkYQSfW7nlGCqsX16h0w4sSTBbqVQQwPBfWl7iiJAeFFQIPBQCECAShKQ...
+INFO  2022-11-18 17:21:43,909 basenative.py wrapper         27  call IdeNative.screen_shot end
+DEBUG 2022-11-18 17:21:43,912 minitest.py _miniTearDown   513 =========Current case Down: test_01_home_page_path=========
+INFO  2022-11-18 17:21:43,913 basenative.py wrapper         23  call BaseNative.get_start_up
+INFO  2022-11-18 17:21:43,913 basenative.py wrapper         27  call BaseNative.get_start_up end
+INFO  2022-11-18 17:21:43,915 minitest.py capture         575 capture teardown.png
+INFO  2022-11-18 17:21:43,916 basenative.py wrapper         23  call IdeNative.screen_shot
+DEBUG 2022-11-18 17:21:43,916 connection.py send            201 SEND > {"id":"c5bead18-57a4-4623-8f7a-d23135454281","method":"App.captureScreenshot","params":{}}
+DEBUG 2022-11-18 17:21:44,096 connection.py _on_message     250 RECV < {"id":"c5bead18-57a4-4623-8f7a-d23135454281","result":{"data":"iVBORw0KGgoAAAANSUhEUgAAAYYAAAL6CAIAAAC96maVAAAAAXNSR0IArs4c6QAAIABJREFUeJzsvemXJcd1J3Zv5PL2papeVVf1Ut2NLiwNNgABFEhAJDUWB6RWUpatgTxnqC/+4GMff/Hxn+Ev/jj+pnNGPEczlHVmTGgse0hJx5QoggBEEiSIBtCFXgrdXXu9V69evSWXCH/IzMiI3F7mq+oFYNwDZGfli7z3xo2Ie2/8IjITy3/8dQAAAARgDBBTjgDMKwMMAeXz2JGxVD4BN488PsE5Q1GOdMxHibfmZRC7Ld0EcRIve5bx/k22D7BkNTMslqIIympIV3KyOAXjJrE7UVvEhafXRbT6TKyTFY0bOjiKYmPtLp3naNmMvpHeT6RRkzKCTq3ds4wUVi+qUeGG5yWIKNSrCGB4zq0vcEVBDnIrBB4KABgiMA...
+INFO  2022-11-18 17:21:44,100 basenative.py wrapper         27  call IdeNative.screen_shot end
+ERROR 2022-11-18 17:21:44,109 assertbase.py _teardown_collect 273 <bound method HomePageTest.test_01_home_page_path of <case.homepage_test.HomePageTest testMethod=test_01_home_page_path>>
+Traceback (most recent call last):
+  File "c:\users\admin\appdata\local\programs\python\python38\lib\site-packages\minium\framework\libs\unittest\case.py", line 32, in testPartExecutor
+    yield
+  File "c:\users\admin\appdata\local\programs\python\python38\lib\site-packages\minium\framework\libs\unittest\case.py", line 118, in run
+    self._callTestMethod(testMethod)
+  File "c:\users\admin\appdata\local\programs\python\python38\lib\unittest\case.py", line 633, in _callTestMethod
+    method()
+  File "D:\E护通\自动化\miniapp_auto\case\homepage_test.py", line 22, in test_01_home_page_path
+    print("检查当前页面路径++++++++++++")
+OSError: [WinError 233] 管道的另一端上无任何进程。

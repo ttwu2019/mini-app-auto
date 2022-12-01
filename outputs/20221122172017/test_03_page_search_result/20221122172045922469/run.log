@@ -1,0 +1,48 @@
+INFO  2022-11-22 17:20:45,923 minitest.py _miniSetUp      279 =========Current case: test_03_page_search_result=========
+INFO  2022-11-22 17:20:45,924 minitest.py _miniSetUp      280 package info: D:.E护通.自动化.miniapp_auto.case.homepage_test, case info: HomePageTest.test_03_page_search_result
+INFO  2022-11-22 17:20:45,924 basenative.py wrapper         23  call BaseNative.back_to_miniprogram
+INFO  2022-11-22 17:20:45,925 basenative.py back_to_miniprogram 528 try back_to_miniprogram 3
+INFO  2022-11-22 17:20:45,925 basenative.py wrapper         27  call BaseNative.back_to_miniprogram end
+INFO  2022-11-22 17:20:45,925 app.py     relaunch        387 ReLaunch: /pages/user/userindex
+DEBUG 2022-11-22 17:20:45,926 connection.py send_async      211 ASYNC_SEND > {"id": "59ca3dc8-1545-45cb-9450-9cdc6485e384", "method": "App.callWxMethod", "params": {"method": "reLaunch", "args": [{"url": "/pages/user/userindex"}]}}
+DEBUG 2022-11-22 17:20:45,996 connection.py _on_message     252 RECV < {"id":"59ca3dc8-1545-45cb-9450-9cdc6485e384","result":{"result":{"errMsg":"reLaunch:ok"}}}
+INFO  2022-11-22 17:20:45,997 connection.py _on_message     273 received async msg: 59ca3dc8-1545-45cb-9450-9cdc6485e384
+DEBUG 2022-11-22 17:20:46,330 connection.py _on_message     252 RECV < {"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"webviewId":6,"path":"pages/user/userindex","query":{},"openType":"reLaunch","__ts__":1669108846327},1669108846328]}}
+INFO  2022-11-22 17:20:46,343 app.py     _on_route_changed 588 Route changed, {'name': 'onAppRouteDone', 'args': [{'webviewId': 6, 'path': 'pages/user/userindex', 'query': {}, 'openType': 'reLaunch', '__ts__': 1669108846327}, 1669108846328]}
+DEBUG 2022-11-22 17:20:56,346 connection.py send            201 SEND > {"id":"83a805da-82eb-49c5-bb9d-67f9c64c5a4d","method":"App.getCurrentPage","params":{}}
+DEBUG 2022-11-22 17:20:56,354 connection.py _on_message     252 RECV < {"id":"83a805da-82eb-49c5-bb9d-67f9c64c5a4d","result":{"pageId":6,"path":"pages/user/userindex","query":{}}}
+INFO  2022-11-22 17:20:56,358 page.py    _get_elements_by_css 527 try to get elements: view[class="uh-bottom data-v-ec48ec48"]
+DEBUG 2022-11-22 17:20:56,361 connection.py send            201 SEND > {"id":"b5b3ce49-5362-4713-91d8-47b415dc1852","method":"Page.getElements","params":{"selector":"view[class=\"uh-bottom data-v-ec48ec48\"]","pageId":6}}
+DEBUG 2022-11-22 17:20:56,372 connection.py _on_message     252 RECV < {"id":"b5b3ce49-5362-4713-91d8-47b415dc1852","result":{"elements":[{"elementId":"6297648b-bef2-44d2-b440-cb60d87dc90b","tagName":"view"}]}}
+INFO  2022-11-22 17:20:56,373 page.py    _get_elements_by_css 534 find elements success: [<minium.miniprogram.base_driver.element.BaseElement object at 0x00000145ADB59910>]
+DEBUG 2022-11-22 17:20:56,375 connection.py send            201 SEND > {"id":"5771901f-eb4b-4882-b65a-a65a603d5e98","method":"Element.tap","params":{"elementId":"6297648b-bef2-44d2-b440-cb60d87dc90b","pageId":6}}
+DEBUG 2022-11-22 17:20:56,453 connection.py _on_message     252 RECV < {"id":"5771901f-eb4b-4882-b65a-a65a603d5e98","result":{}}
+DEBUG 2022-11-22 17:20:58,562 connection.py _on_message     252 RECV < {"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"webviewId":7,"path":"pageuser/searchpage","query":{"pointsSource":"1"},"openType":"navigateTo","__ts__":1669108858505},1669108858508]}}
+INFO  2022-11-22 17:20:58,566 app.py     _on_route_changed 588 Route changed, {'name': 'onAppRouteDone', 'args': [{'webviewId': 7, 'path': 'pageuser/searchpage', 'query': {'pointsSource': '1'}, 'openType': 'navigateTo', '__ts__': 1669108858505}, 1669108858508]}
+DEBUG 2022-11-22 17:21:06,455 connection.py send            201 SEND > {"id":"94701009-08f9-44be-bb9b-debcabc4c19f","method":"App.getCurrentPage","params":{}}
+DEBUG 2022-11-22 17:21:06,458 connection.py _on_message     252 RECV < {"id":"94701009-08f9-44be-bb9b-debcabc4c19f","result":{"pageId":7,"path":"pageuser/searchpage","query":{"pointsSource":"1"}}}
+INFO  2022-11-22 17:21:06,458 page.py    _get_elements_by_css 527 try to get elements: .input
+DEBUG 2022-11-22 17:21:06,460 connection.py send            201 SEND > {"id":"af64de20-5f87-427d-819e-66e201826f6c","method":"Page.getElements","params":{"selector":".input","pageId":7}}
+DEBUG 2022-11-22 17:21:06,463 connection.py _on_message     252 RECV < {"id":"af64de20-5f87-427d-819e-66e201826f6c","result":{"elements":[{"elementId":"7c897253-907b-445f-beca-aab3447bc773","tagName":"input"}]}}
+INFO  2022-11-22 17:21:06,464 page.py    _get_elements_by_css 534 find elements success: [<minium.miniprogram.base_driver.element.FormElement object at 0x00000145ADB967F0>]
+DEBUG 2022-11-22 17:21:06,464 connection.py send            201 SEND > {"id":"edd99086-3a6e-44ae-9ddc-4a3d388846d9","method":"Element.tap","params":{"elementId":"7c897253-907b-445f-beca-aab3447bc773","pageId":7}}
+DEBUG 2022-11-22 17:21:06,478 connection.py _on_message     252 RECV < {"id":"edd99086-3a6e-44ae-9ddc-4a3d388846d9","result":{}}
+DEBUG 2022-11-22 17:21:16,478 connection.py send            201 SEND > {"id":"be5fc95d-038d-4c22-912f-4b35a81a879f","method":"App.getCurrentPage","params":{}}
+DEBUG 2022-11-22 17:21:16,480 connection.py _on_message     252 RECV < {"id":"be5fc95d-038d-4c22-912f-4b35a81a879f","result":{"pageId":7,"path":"pageuser/searchpage","query":{"pointsSource":"1"}}}
+INFO  2022-11-22 17:21:16,480 page.py    _get_elements_by_css 527 try to get elements: .input
+DEBUG 2022-11-22 17:21:16,482 connection.py send            201 SEND > {"id":"861b899b-9785-48e4-b885-1e661d82d055","method":"Page.getElements","params":{"selector":".input","pageId":7}}
+DEBUG 2022-11-22 17:21:16,485 connection.py _on_message     252 RECV < {"id":"861b899b-9785-48e4-b885-1e661d82d055","result":{"elements":[{"elementId":"7c897253-907b-445f-beca-aab3447bc773","tagName":"input"}]}}
+INFO  2022-11-22 17:21:16,485 page.py    _get_elements_by_css 534 find elements success: [<minium.miniprogram.base_driver.element.FormElement object at 0x00000145ADB962B0>]
+DEBUG 2022-11-22 17:21:16,486 connection.py send            201 SEND > {"id":"db1eb28e-d4fa-4252-a7b4-c716197ce79c","method":"Element.callFunction","params":{"functionName":"input.input","args":["\u9662\u5916"],"elementId":"7c897253-907b-445f-beca-aab3447bc773","pageId":7}}
+DEBUG 2022-11-22 17:21:16,503 connection.py _on_message     252 RECV < {"id":"db1eb28e-d4fa-4252-a7b4-c716197ce79c","result":{}}
+DEBUG 2022-11-22 17:21:16,505 connection.py send            201 SEND > {"id":"69081968-9883-4674-a2e1-0736e7e87142","method":"App.getCurrentPage","params":{}}
+DEBUG 2022-11-22 17:21:16,507 connection.py _on_message     252 RECV < {"id":"69081968-9883-4674-a2e1-0736e7e87142","result":{"pageId":7,"path":"pageuser/searchpage","query":{"pointsSource":"1"}}}
+INFO  2022-11-22 17:21:16,508 page.py    _get_elements_by_css 527 try to get elements: .input
+DEBUG 2022-11-22 17:21:16,509 connection.py send            201 SEND > {"id":"6298b9cd-73c1-497d-b048-ebbf8baa65ea","method":"Page.getElements","params":{"selector":".input","pageId":7}}
+DEBUG 2022-11-22 17:21:16,519 connection.py _on_message     252 RECV < {"id":"6298b9cd-73c1-497d-b048-ebbf8baa65ea","result":{"elements":[{"elementId":"7c897253-907b-445f-beca-aab3447bc773","tagName":"input"}]}}
+INFO  2022-11-22 17:21:16,521 page.py    _get_elements_by_css 534 find elements success: [<minium.miniprogram.base_driver.element.FormElement object at 0x00000145ADB96340>]
+DEBUG 2022-11-22 17:21:16,522 connection.py send            201 SEND > {"id":"ceaf9ca0-3de5-4da5-afd1-a6657fa6d445","method":"Element.tap","params":{"elementId":"7c897253-907b-445f-beca-aab3447bc773","pageId":7}}
+DEBUG 2022-11-22 17:21:16,554 connection.py _on_message     252 RECV < {"id":"ceaf9ca0-3de5-4da5-afd1-a6657fa6d445","result":{}}
+DEBUG 2022-11-22 17:21:26,555 minitest.py _miniTearDown   513 =========Current case Down: test_03_page_search_result=========
+INFO  2022-11-22 17:21:26,555 basenative.py wrapper         23  call BaseNative.get_start_up
+INFO  2022-11-22 17:21:26,556 basenative.py wrapper         27  call BaseNative.get_start_up end
